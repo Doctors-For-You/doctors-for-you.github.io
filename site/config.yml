@@ -1,3 +1,14 @@
 # _config.yml
-
 title: "Doctors For You website using Jekyll"
+
+
+markdown: kramdown
+
+plugins:
+  - jekyll-timeago
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
