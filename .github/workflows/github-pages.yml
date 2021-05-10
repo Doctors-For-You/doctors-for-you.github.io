@@ -28,4 +28,5 @@ jobs:
         with:
           token: ${{ secrets.DFY_GITHUB_TOKEN }}
           target_branch: 'gh-pages'
+          gem_src: '.'
           jekyll_src: 'site'
