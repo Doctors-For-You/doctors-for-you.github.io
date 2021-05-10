@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include html_head.html -%}
+
+  <body class="__default__ vw-100 vh-100">
+
+    <div id="smooth_state_container" class="d-flex vw-100 vh-100 w-100 h-100 flex-column">
+
+      <header id="layout_header" class="navbar navbar-expand-md px-0 border-bottom bg-white flex-grow-0 flex-shrink-0 navbar-light">
+        {%- include header.html -%}
+      </header>
+      <div id="layout_scrollable_container" class="d-flex flex-column flex-grow-1 flex-shrink-1 overflow-auto">
+        <main id="layout_content" class="bg-white flex-grow-1 flex-shrink-1 d-flex flex-column align-items-stretch" aria-label="Content">
+          {{ content }}
+        </main>
+        <footer id="layout_footer flex-grow-0 flex-shrink-0" class="bg-light py-3 border-top">
+          {%- include footer.html -%}
+        </footer>
+      </div>
+
+    </div>
+
+    {% comment %}
+    Dont use jquery.slim as popper and smoothState need the full jquery lib
+    {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    {% comment %} https://ionicons.com/usage {% endcomment %}
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  </body>
+
+</html>
