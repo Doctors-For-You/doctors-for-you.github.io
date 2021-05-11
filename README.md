@@ -40,6 +40,7 @@ git checkout v4.5.3
 ## Dev steps
 
 - Set up github actions, github Pages
-- layouts is working
+- Add default layout
 - autoprefixer is not supported on github. finding Workaround [todo]
 - add bootstrap
+- image assets

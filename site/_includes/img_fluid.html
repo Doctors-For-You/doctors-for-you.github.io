@@ -1,0 +1,27 @@
+{% assign src = include.src %}
+
+{% assign src2x = src | replace: '.png', '@2x.png' %}
+{% assign src2x = src2x | replace: '.jpg', '@2x.jpg' %}
+
+{% assign 1x_exists = false %}
+{% assign 2x_exists = false %}
+
+{% for static_file in site.static_files %}
+  {% if static_file.path == src %}
+    {% assign 1x_exists = true %}
+  {% endif %}
+  {% if static_file.path == src2x %}
+    {% assign 2x_exists = true %}
+  {% endif %}
+{% endfor %}
+
+{% capture srcset %}
+{%- if 1x_exists -%} {{ src }} 1x {%- endif -%}
+{%- if 2x_exists -%} , {{ src2x }} 2x {%- endif -%}
+{% endcapture %}
+
+
+<img class="img-fluid"
+  src="{{ src }}"
+  srcset="{{ srcset }}"
+/>
