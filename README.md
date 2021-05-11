@@ -44,3 +44,5 @@ git checkout v4.5.3
 - autoprefixer is not supported on github. finding Workaround [todo]
 - add bootstrap
 - image assets
+
+github pages do not work with lfs
