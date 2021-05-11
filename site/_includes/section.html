@@ -1,0 +1,11 @@
+{% if include.fluid == true %}
+{% assign container_class = "container-fluid" %}
+{% else %}
+{% assign container_class = "container-xl" %}
+{% endif %}
+
+<div class="{{ include.bg_class }}">
+  <div class="{{ container_class }}">
+    {{ include.content }}
+  </div>
+</div>

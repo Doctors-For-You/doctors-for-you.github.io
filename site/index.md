@@ -2,6 +2,21 @@
 layout: default
 ---
 
-Welcome to Doctors For You
+{% capture hero_section %}
+  <div class="row py-5">
+    <div class="col-12 mx-auto">
+      <h1 class="mt-3">sadfasdf</h1>
+      <p class="lead text-secondary">adfafda</p>
+    </div>
+  </div>
+{% endcapture %}
+{% include section.html bg_class="bg-white" content=hero_section %}
+
+
+{% capture anothervar %}
+hello world 2
+{% endcapture %}
+{% include section.html bg_class="bg-primary" content=anothervar %}
+
 
 {% include img_fluid.html src="/assets/media/waterfalls-4821153_640.jpg" %}
