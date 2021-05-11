@@ -21,7 +21,8 @@
 {% endcapture %}
 
 
-<img class="img-fluid"
+<img class="{{ include.extra_class }}"
   src="{{ src }}"
   srcset="{{ srcset }}"
+  alt="{{ include.alt }}"
 />

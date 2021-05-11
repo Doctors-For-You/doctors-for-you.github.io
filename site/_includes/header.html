@@ -1,4 +1,100 @@
 
-<div class="container-xl border-bottom">
+{% capture logo %}
+<a
+  class="navbar-brand" href="/"
+  data-event-label="Doctors For You Nav Logo"
+  data-event-category="header_nav"
+>
+  {% include image.html src="/assets/media/brand/logo-color-rect.png" extra_class="d-none d-sm-inline-block" %}
+  {% include image.html src="/assets/media/brand/logo-color-square.png" extra_class="d-inline-block d-sm-none" %}
+</a>
+{% endcapture %}
+
+
+<div class="container-xl">
+
+  <button
+    id="header_nav_toggle"
+    class="navbar-toggler collapsed border-0" type="button"
+    data-toggle="collapse" data-target="#navbarMenu"
+    aria-controls="navbarMenu" aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <ion-icon id="navmenuicon" name="menu-sharp"></ion-icon>
+    <ion-icon id="navcloseicon" name="close"></ion-icon>
+  </button>
+
+  {{ logo }}
+
+  <a
+    role="button" href="https://app.pagehits.io/signup"
+    class="btn btn-link btn-ionicon d-md-none" aria-label="Signup"
+    data-event-category="header_nav"
+    data-event-label="Signup"
+  >
+    <span class="mr-1 text-primary">Signup</span>
+    <ion-icon class="text-primary" name="chevron-forward-sharp"></ion-icon>
+  </a>
+
+  <div class="collapse navbar-collapse mx-md-3" id="navbarMenu">
+    <ul class="navbar-nav ml-auto">
+      {% for menu in site.data.nav.headerMenu %}
+        {%- if menu.data -%}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ menu.text }}</a>
+              <div class="dropdown-menu">
+              {% for submenu in menu.data %}
+                {% if submenu.divider %}
+                  <div class="dropdown-divider"></div>
+                {% else %}
+                  <a class="dropdown-item" href="{{ submenu.target }}">{{ submenu.text }}</a>
+                {% endif %}
+              {% endfor %}
+          </li>
+        {%- else -%}
+          <li class="nav-item">
+            <a
+              class="nav-link" href="{{ menu.target }}"
+              data-event-label="{{ menu.text }}" data-event-category="header_nav"
+            >
+              {{ menu.text }}
+            </a>
+          </li>
+        {%- endif -%}
+      {% endfor %}
+    </ul>
+
+    <!-- <ul class="nav nav-pills ml-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul> -->
+
+  </div>
+
+  <a
+    href="https://app.pagehits.io/signup" role="button"
+    class="btn btn-success btn-sm d-none d-md-block" aria-label="Sign up"
+    data-event-category="header_nav"
+    data-event-label="Signup"
+  >
+    Sign up
+  </a>
 
 </div>
