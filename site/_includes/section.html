@@ -4,8 +4,9 @@
 {% assign container_class = "container-xl" %}
 {% endif %}
 
-<div class="{{ include.bg_class }}">
-  <div class="{{ container_class }}">
+<div class="{{ include.bg_class }} section_outer"
+  style="background-image: url({{ include.bg_image }});">
+  <div class="{{ container_class }} py-4">
     {{ include.content }}
   </div>
 </div>

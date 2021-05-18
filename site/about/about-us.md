@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /about-us
-
 ---
 
 <h1>About us</h1>

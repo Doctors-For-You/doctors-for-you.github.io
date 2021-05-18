@@ -149,8 +149,8 @@ $spacers: map-merge(
     1: ($spacer * .25),
     2: ($spacer * .5),
     3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    4: ($spacer * 3),
+    5: ($spacer * 5)
   ),
   $spacers
 );
@@ -310,8 +310,8 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.75;//1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
+$h1-font-size:                $font-size-base * 3.3;// !default;
+$h2-font-size:                $font-size-base * 2.6;// !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
