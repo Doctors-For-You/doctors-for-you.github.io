@@ -1,0 +1,27 @@
+header {
+  .nav-link {
+    // @include media-breakpoint-up(xl) {
+    //   font-size: $font-size-lg;
+    // }
+    font-size: $font-size-base;
+  }
+  .navbar-brand {
+    img {
+      height: 42px;
+    }
+  }
+  .dropdown-item {
+    ion-icon {
+      color: $text-color-mute;
+      font-size: $font-size-base;
+      // vertical-align: baseline;
+      // padding-top: 0.2rem;
+      // width: 1rem;
+    }
+    &:hover {
+      ion-icon {
+        color: $primary;
+      }
+    }
+  }
+}

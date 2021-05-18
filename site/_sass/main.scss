@@ -1,4 +1,11 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
+
+@import "header";
 @import "layout";
+
+
+.fine-print {
+  font-size: $font-size-base *0.75;
+}

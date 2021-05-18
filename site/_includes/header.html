@@ -40,14 +40,17 @@
     <ul class="navbar-nav ml-auto">
       {% for menu in site.data.nav.headerMenu %}
         {%- if menu.data -%}
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown pl-1 pl-lg-2 pl-xl-3">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ menu.text }}</a>
               <div class="dropdown-menu">
               {% for submenu in menu.data %}
                 {% if submenu.divider %}
                   <div class="dropdown-divider"></div>
                 {% else %}
-                  <a class="dropdown-item" href="{{ submenu.target }}">{{ submenu.text }}</a>
+                  <a class="dropdown-item d-flex flex-row align-items-center" href="{{ submenu.target }}">
+                    <ion-icon name="{{ submenu.icon }}" class="mr-2"></ion-icon>
+                    {{ submenu.text }}
+                  </a>
                 {% endif %}
               {% endfor %}
           </li>
@@ -64,37 +67,16 @@
       {% endfor %}
     </ul>
 
-    <!-- <ul class="nav nav-pills ml-auto">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul> -->
 
   </div>
 
   <a
-    href="https://app.pagehits.io/signup" role="button"
-    class="btn btn-success btn-sm d-none d-md-block" aria-label="Sign up"
+    href="/donate" role="button"
+    class="btn btn-primary d-none d-md-block" aria-label="Sign up"
     data-event-category="header_nav"
-    data-event-label="Signup"
+    data-event-label="Donate"
   >
-    Sign up
+    Donate
   </a>
 
 </div>
