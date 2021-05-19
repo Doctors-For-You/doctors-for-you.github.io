@@ -4,9 +4,15 @@
 {% assign container_class = "container-xl" %}
 {% endif %}
 
+{% if include.py_class == true %}
+{% assign vertical_padding_class = include.py_class %}
+{% else %}
+{% assign vertical_padding_class = "py-3" %}
+{% endif %}
+
 <div class="{{ include.bg_class }} section_outer"
   style="background-image: url({{ include.bg_image }});">
-  <div class="{{ container_class }} py-4">
+  <div class="{{ container_class }} {{ vertical_padding_class }}">
     {{ include.content }}
   </div>
 </div>

@@ -2,21 +2,241 @@
 layout: default
 ---
 
-{% capture hero_section %}
-  <div class="row py-5">
-    <div class="col-12 mx-auto">
-      <h1 class="mt-3">Under construction</h1>
-      <p class="lead text-secondary">Doctors for you</p>
+
+{% capture section1 %}
+  <div class="row py-5 align-items-center">
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 col-lg-5 col-xl-5 text-center text-md-left">
+      <h1 class="mt-4 mb-4">Make a Difference</h1>
+      <div class="mb-4 lead">
+        Your support in our war against COVID can ensure a new breath of life for someone!
+      </div>
+      <a class="btn btn-primary btn-lg mb-4" href="#" role="button">
+        <div class="d-flex flex-row align-items-center">
+          Donate now
+          <ion-icon class="ml-2" name="arrow-forward-outline"></ion-icon>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">
+      <img class="img-fluid rounded" src="/assets/media/landing/donate/clinic-1807543_1920.jpg" />
     </div>
   </div>
 {% endcapture %}
-{% include section.html bg_class="bg-white" content=hero_section %}
 
+{% include section.html
+  bg_class="bg-light"
+  content=section1
+%}
 
-{% capture anothervar %}
-hello world 2
+{% comment %}
+{% capture section1 %}
+  <div class="row py-5">
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+      <div class="p-3 rounded" style="background-color: rgba(255,255,255,0.7);">
+        <h1 class="mt-3 text-center text-lg-right">Your support in our war against COVID has ensured a new breath of life for someone</h1>
+      </div>
+    </div>
+  </div>
 {% endcapture %}
-{% include section.html bg_class="bg-primary" content=anothervar %}
+
+{% include section.html
+  bg_class="bg-light"
+  bg_image="/assets/media/landing/donate/clinic-1807543_1920.jpg"
+  content=section1
+%}
+
+{% endcomment %}
+
+{% capture section2 %}
+  <div class="row py-5 align-items-center">
+    <div class="col-12 col-md-8 col-xl-6 text-justify my-3 lead">
+      The 2nd wave of <strong>COVID-19</strong> has destroyed myriad of lives,
+      but your support in these trying times has been a silver lining of hope.
+      We are extremely grateful to everyone who has stood by us in these challenging times
+      and your support has empowered us to provide the necessary COVID Care to patients.
+    </div>
+    <div class="col-12 col-md-4 col-xl-6 text-center my-3">
+      {% include image.html src="/assets/media/brand/logo-color-rect.png" %}
+    </div>
+  </div>
+{% endcapture %}
 
 
-{% include image.html src="/assets/media/waterfalls-4821153_640.jpg" %}
+{% include section.html
+  bg_class="bg-white"
+  content=section2
+%}
+
+{% capture section3 %}
+  <div class="row py-3">
+    <div class="col-12 text-center mb-3">
+      <h2>You have <span class="text-primary">helped us</span></h2>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
+      <div class="bg-white rounded shadow p-3">
+        <div class="lead">
+          Manage <span class="text-primary">17+ COVID Care centers</span> pan-India
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
+      <div class="bg-white rounded shadow p-3">
+        <div class="lead">
+          Facilitate <span class="text-primary">56+ vaccination centers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
+      <div class="bg-white rounded shadow p-3">
+        <div class="lead">
+          Vaccinate <span class="text-primary">2 Lakh+ people</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
+      <div class="bg-white rounded shadow p-3">
+        <div class="lead">
+          Vaccinate <span class="text-primary">2 Lakh+ people</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
+      <div class="bg-white rounded shadow p-3">
+        <div class="lead">
+          Procure <span class="text-primary">800+ high quality</span> oxymeters
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
+      <div class="bg-white rounded shadow p-3">
+        <div class="lead">
+          Set up <span class="text-primary">150+ patient monitors</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=section3
+%}
+
+{% capture section4 %}
+  <div class="row align-items-center">
+    <div class="col-12 text-center">
+      <h2>We need <span class="text-primary">immediate</span> funds to</h2>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-8 my-3">
+      <div class="lead">
+        <span class="text-primary lead">&check;</span> Raise funds for our relief program on Ketto.org
+      </div>
+      <div class="lead">
+        <span class="text-primary lead">&check;</span> Buy necessary medical equipment for COVID care
+      </div>
+      <div class="lead">
+        <span class="text-primary lead">&check;</span> Ensure healthcare for everyone
+      </div>
+    </div>
+    <div class="col-12 col-md-4 d-none d-md-block">
+      <img class="img-fluid" src="/assets/media/landing/donate/arrow-2886223_1280.jpg" />
+    </div>
+  </div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=section4
+%}
+
+
+{% capture section5 %}
+  <div class="row mb-4">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
+      Each and every one of us at DFY are working round the clock
+      to ensure that our COVID relief work reaches
+      as many citizens as possible.
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
+      Your support is our pillar of strength
+      and we hope you will continue to support us
+      in our battle against COVID.
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
+      Let's make this place a better and healthier place
+      and win the fight together.
+    </div>
+  </div>
+
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-dark"
+  content=section5
+%}
+
+
+{% capture section6 %}
+  <div class="row mb-3">
+    <div class="col-12">
+      <div>
+        Thank you,<br />
+        Team Doctors For You
+      </div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex">
+        <div class="">
+          @DFYIndia
+        </div>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=section6
+%}

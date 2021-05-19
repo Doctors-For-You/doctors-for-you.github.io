@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% capture hero_section %}
+  <div class="row py-5">
+    <div class="col-12 mx-auto">
+      <h1 class="mt-3">Under construction</h1>
+      <p class="lead text-secondary">Doctors for you</p>
+    </div>
+  </div>
+{% endcapture %}
+{% include section.html bg_class="bg-white" content=hero_section %}
+
+
+{% capture anothervar %}
+hello world 2
+{% endcapture %}
+{% include section.html bg_class="bg-primary" content=anothervar %}
+
+
+{% include image.html src="/assets/media/waterfalls-4821153_640.jpg" %}

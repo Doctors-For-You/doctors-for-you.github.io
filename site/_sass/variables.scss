@@ -149,8 +149,9 @@ $spacers: map-merge(
     1: ($spacer * .25),
     2: ($spacer * .5),
     3: $spacer,
-    4: ($spacer * 3),
-    5: ($spacer * 5)
+    // 3: ($spacer * 1),
+    4: ($spacer * 2.4),
+    5: ($spacer * 4.2)
   ),
   $spacers
 );
@@ -246,9 +247,9 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .5rem !default;
-$border-radius-lg:            .75rem !default;
-$border-radius-sm:            .25 rem !default;
+$border-radius:               .5rem;// !default;
+$border-radius-lg:            .52rem;// !default;
+$border-radius-sm:            .48rem;// !default;
 
 $rounded-pill:                50rem !default;
 
@@ -308,18 +309,39 @@ $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.75;//1.5 !default;
+$line-height-base:            1.9;//1.5 !default;
 
-$h1-font-size:                $font-size-base * 3.3;// !default;
-$h2-font-size:                $font-size-base * 2.6;// !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+
+$h1-font-size:                $font-size-base * 3.33; //60
+$h2-font-size:                $font-size-base * 2.8;
+$h3-font-size:                $font-size-base * 2;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+// @include media-breakpoint-down(xs) { }
+// @include media-breakpoint-down(sm) { }
+// @include media-breakpoint-down(md) {
+//   $h1-font-size:                $font-size-base * 2.22; //40
+//   $h2-font-size:                $font-size-base * 2.8;
+//   $h3-font-size:                $font-size-base * 2;
+//   $h4-font-size:                $font-size-base * 1.5;
+//   $h5-font-size:                $font-size-base * 1.25;
+//   $h6-font-size:                $font-size-base;
+// }
+// @include media-breakpoint-down(lg) {
+//   $h1-font-size:                $font-size-base * 2.67; //48
+//   $h2-font-size:                $font-size-base * 2.8;
+//   $h3-font-size:                $font-size-base * 2;
+//   $h4-font-size:                $font-size-base * 1.5;
+//   $h5-font-size:                $font-size-base * 1.25;
+//   $h6-font-size:                $font-size-base;
+// }
+
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
-$headings-font-weight:        500 !default;
+$headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              $text-color-dark;// !default;
 
@@ -334,8 +356,8 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              $font-size-base * 1.25 !default;
-$lead-font-weight:            300 !default;
+$lead-font-size:              $font-size-base * 1.11;// !default;
+$lead-font-weight:            500;// !default;
 
 $small-font-size:             80% !default;
 
