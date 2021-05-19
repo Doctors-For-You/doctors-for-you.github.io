@@ -170,9 +170,9 @@ layout: default
 
   {% assign index__fund_proceeds_card = "shadow-on-hover-grow col-12 rounded-lg p-3 px-md-4 mb-3 d-flex flex-row align-items-center" %}
 
-  <div class="row">
+  <div class="row mb-4">
     <div class="col-12 col-md-10 col-lg-8 mx-auto">
-      <div class="row">
+      <div class="row px-3">
         <div class="{{ index__fund_proceeds_card }}">
           <ion-icon class="h4 mr-3 text-muted" name="card"></ion-icon> Raise funds for our relief program on Ketto.org
         </div>
@@ -186,11 +186,40 @@ layout: default
     </div>
   </div>
 
+  {% assign index__fund_pledge_col = "col-12 col-md-4 mb-3 text-justify text-muted small" %}
+
   <div class="row">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
-      Each and every one of us at DFY are working round the clock
-      to ensure that our COVID relief work reaches
-      as many citizens as possible.
+    <div class="col-12 col-md-12 col-lg-8 mx-auto">
+      <div class="row px-3">
+        <div class="{{ index__fund_pledge_col }}">
+          <ion-icon class="h4 mb-0 text-muted d-none d-md-block" name="timer-outline"></ion-icon>
+          <div>
+          Each and every one of us at DFY are working round the clock
+          to ensure that our COVID relief work reaches
+          as many citizens as possible.</div>
+        </div>
+        <div class="{{ index__fund_pledge_col }}">
+          <ion-icon class="h4 mb-0 text-muted d-none d-md-block" name="heart-outline"></ion-icon>
+          <div class="">
+            Your support is our pillar of strength
+            and we hope you will continue to support us
+            in our battle against COVID.
+          </div>
+        </div>
+        <div class="{{ index__fund_pledge_col }}">
+          <ion-icon class="h4 mb-0 text-muted d-none d-md-block" name="thumbs-up-outline"></ion-icon>
+          <div class="">
+            Let's make this place a better and healthier place
+            and win the fight together.
+          </div>
+        </div>
+      </div>
+      <div class="row px-3">
+        <div class="col-12 text-right">
+          <div>Thank you,</div>
+          <div class="text-color-dark">The Doctors For You Team</div>
+        </div>
+      </div>
     </div>
   </div>
 {% endcapture %}
@@ -201,46 +230,7 @@ layout: default
 %}
 
 
-{% capture section5 %}
-  <div class="row">
-
-    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
-      Each and every one of us at DFY are working round the clock
-      to ensure that our COVID relief work reaches
-      as many citizens as possible.
-    </div>
-  </div>
-  <div class="row mb-4">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
-      Your support is our pillar of strength
-      and we hope you will continue to support us
-      in our battle against COVID.
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
-      Let's make this place a better and healthier place
-      and win the fight together.
-    </div>
-  </div>
-
-{% endcapture %}
-
-{% include section.html
-  bg_class="bg-dark"
-  content=section5
-%}
-
-
 {% capture section6 %}
-  <div class="row mb-3">
-    <div class="col-12">
-      <div>
-        Thank you,<br />
-        Team Doctors For You
-      </div>
-    </div>
-  </div>
   <div class="row mb-3">
     <div class="col-6 col-md-4 col-lg-2 mb-3">
       <img class="img-fluid" src="/assets/media/landing/donate/field.jpg" />
