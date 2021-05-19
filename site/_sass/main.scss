@@ -10,3 +10,15 @@
 .fine-print {
   font-size: $font-size-base *0.75;
 }
+
+.text-color-dark {
+  color: $text-color-dark !important;
+}
+
+.index__contribution_card_inner {
+  height: 180px;
+  transition: box-shadow .3s ease-in;
+  &:hover {
+    box-shadow: 0 0.075rem 1rem rgba(18, 20, 29, 0.075);
+  }
+}

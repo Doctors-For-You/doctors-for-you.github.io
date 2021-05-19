@@ -233,7 +233,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           30px;// !default;
 $grid-row-columns:            6 !default;
 
 
@@ -342,7 +342,7 @@ $h6-font-size:                $font-size-base;
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
 $headings-font-weight:        600 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.22;// !default;
 $headings-color:              $text-color-dark;// !default;
 
 $display1-size:               6rem !default;

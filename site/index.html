@@ -4,21 +4,21 @@ layout: default
 
 
 {% capture section1 %}
-  <div class="row py-5 align-items-center">
+  <div class="row py-4 align-items-center">
     <div class="col-12 col-sm-10 offset-sm-1 col-md-5 offset-md-0 col-lg-5 col-xl-5 text-center text-md-left">
-      <h1 class="mt-4 mb-4">Make a Difference</h1>
-      <div class="mb-4 lead">
-        Your support in our war against COVID can ensure a new breath of life for someone!
+      <h1 class="my-3 my-lg-4">Make a Difference</h1>
+      <div class="mb-3 mb-lg-4 lead">
+        Your contribution in our war against COVID can ensure a new breath of life for someone!
       </div>
-      <a class="btn btn-primary btn-lg mb-4" href="#" role="button">
+      <a class="btn btn-primary btn-lg mb-3 mb-lg-4" href="#" role="button">
         <div class="d-flex flex-row align-items-center">
           Donate now
           <ion-icon class="ml-2" name="arrow-forward-outline"></ion-icon>
         </div>
       </a>
     </div>
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">
-      <img class="img-fluid rounded" src="/assets/media/landing/donate/clinic-1807543_1920.jpg" />
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-7 offset-md-0 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1 my-3 my-lg-4">
+      <img class="img-fluid rounded " src="/assets/media/landing/donate/clinic-1807543_1920.jpg" />
     </div>
   </div>
 {% endcapture %}
@@ -47,83 +47,113 @@ layout: default
 
 {% endcomment %}
 
-{% capture section2 %}
+{% capture section2-old %}
   <div class="row py-5 align-items-center">
-    <div class="col-12 col-md-8 col-xl-6 text-justify my-3 lead">
+    <div class="col-12 col-md-8 col-xl-6 text-justify my-3 lead text-white">
       The 2nd wave of <strong>COVID-19</strong> has destroyed myriad of lives,
       but your support in these trying times has been a silver lining of hope.
       We are extremely grateful to everyone who has stood by us in these challenging times
       and your support has empowered us to provide the necessary COVID Care to patients.
     </div>
-    <div class="col-12 col-md-4 col-xl-6 text-center my-3">
+    <div class="col-12 col-md-4 col-xl-6 text-center my-3 text-white-50">
       {% include image.html src="/assets/media/brand/logo-color-rect.png" %}
+    </div>
+  </div>
+{% endcapture %}
+
+{% capture section2 %}
+  <div class="row">
+    <div class="col-12 col-sm-10 col-md-8 text-center h4 mx-auto">
+      <blockquote class="blockquote">
+        <div class="mb-3 text-white">
+          The 2nd wave of <strong>COVID-19</strong> has destroyed myriad of lives,
+          but your support in these trying times has been a silver lining of hope.
+          We are extremely grateful to everyone who has stood by us in these challenging times
+          and your support has empowered us to provide the necessary COVID Care to patients.
+        </div>
+        <div class="blockquote-footer text-white-50">All of us from <cite title="Source Title">Doctors For You</cite></div>
+      </blockquote>
+
     </div>
   </div>
 {% endcapture %}
 
 
 {% include section.html
-  bg_class="bg-white"
+  bg_class="bg-dark"
   content=section2
 %}
 
 {% capture section3 %}
   <div class="row py-3">
     <div class="col-12 text-center mb-3">
-      <h2>You have <span class="text-primary">helped us</span></h2>
+      <h2>Your contributions</h2>
+      <div class="lead">&hellip; so far have helped us accomplish</div>
     </div>
   </div>
-  <div class="row">
 
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
-      <div class="bg-white rounded shadow p-3">
-        <div class="lead">
-          Manage <span class="text-primary">17+ COVID Care centers</span> pan-India
-        </div>
+  {% assign index__contribution_card = "index__contribution_card col-6 col-sm-4 col-md-3 p-3" %}
+  {% assign index__contribution_card_inner = "d-flex flex-column justify-content-center index__contribution_card_inner text-center bg-white rounded px-3 py-4" %}
+
+  <div class="row mx-n3">
+
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">17+</div>
+        <div class="text-color-dark">COVID Care Centers</div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
-      <div class="bg-white rounded shadow p-3">
-        <div class="lead">
-          Facilitate <span class="text-primary">56+ vaccination centers</span>
-        </div>
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">56+</div>
+        <div class="text-color-dark">Vaccination Centers</div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
-      <div class="bg-white rounded shadow p-3">
-        <div class="lead">
-          Vaccinate <span class="text-primary">2 Lakh+ people</span>
-        </div>
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">2+ lakh</div>
+        <div class="text-color-dark">People Vaccinated</div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
-      <div class="bg-white rounded shadow p-3">
-        <div class="lead">
-          Vaccinate <span class="text-primary">2 Lakh+ people</span>
-        </div>
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">800+</div>
+        <div class="text-color-dark">High Quality Oxymeters</div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
-      <div class="bg-white rounded shadow p-3">
-        <div class="lead">
-          Procure <span class="text-primary">800+ high quality</span> oxymeters
-        </div>
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">150+</div>
+        <div class="text-color-dark">Patient Monitors</div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-4 mb-4">
-      <div class="bg-white rounded shadow p-3">
-        <div class="lead">
-          Set up <span class="text-primary">150+ patient monitors</span>
-        </div>
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">1000+</div>
+        <div class="text-color-dark">Oxygen Cylinders</div>
+      </div>
+    </div>
+
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="h3 text-primary">130</div>
+        <div class="text-color-dark">Oxygen Concentrators</div>
+      </div>
+    </div>
+
+    <div class="{{ index__contribution_card }}">
+      <div class="{{ index__contribution_card_inner }}">
+        <div class="lead">&hellip; and counting</div>
       </div>
     </div>
 
   </div>
+
 {% endcapture %}
 
 {% include section.html
@@ -134,7 +164,7 @@ layout: default
 {% capture section4 %}
   <div class="row align-items-center">
     <div class="col-12 text-center">
-      <h2>We need <span class="text-primary">immediate</span> funds to</h2>
+      <h2>We need immediate funds to &hellip;</h2>
     </div>
   </div>
   <div class="row align-items-center">
