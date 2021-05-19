@@ -17,8 +17,19 @@
 
 .index__contribution_card_inner {
   height: 180px;
-  transition: box-shadow .3s ease-in;
+}
+
+.shadow-on-hover {
+  transition: box-shadow .15s ease-in;
   &:hover {
-    box-shadow: 0 0.075rem 1rem rgba(18, 20, 29, 0.075);
+    box-shadow: 0 .1rem 1.125rem rgba(18, 20, 29, .1);
+  }
+}
+
+.shadow-on-hover-grow {
+  transition: box-shadow .15s ease-in;
+  box-shadow: 0 0.075rem 1rem rgba(18, 20, 29, 0.075);
+  &:hover {
+    box-shadow: 0 .2rem 2rem rgba(18, 20, 29, .15);
   }
 }

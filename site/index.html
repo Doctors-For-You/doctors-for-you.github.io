@@ -93,7 +93,7 @@ layout: default
   </div>
 
   {% assign index__contribution_card = "index__contribution_card col-6 col-sm-4 col-md-3 p-3" %}
-  {% assign index__contribution_card_inner = "d-flex flex-column justify-content-center index__contribution_card_inner text-center bg-white rounded px-3 py-4" %}
+  {% assign index__contribution_card_inner = "shadow-on-hover d-flex flex-column justify-content-center index__contribution_card_inner text-center bg-white rounded px-3 py-4" %}
 
   <div class="row mx-n3">
 
@@ -148,7 +148,7 @@ layout: default
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="lead">&hellip; and counting</div>
+        <div class="lead">&hellip; &amp; counting</div>
       </div>
     </div>
 
@@ -162,25 +162,27 @@ layout: default
 %}
 
 {% capture section4 %}
-  <div class="row align-items-center">
+  <div class="row">
     <div class="col-12 text-center">
-      <h2>We need immediate funds to &hellip;</h2>
+      <h2 class="mb-3 mb-md-4">We need immediate funds to &hellip;</h2>
     </div>
   </div>
-  <div class="row align-items-center">
-    <div class="col-12 col-md-8 my-3">
-      <div class="lead">
-        <span class="text-primary lead">&check;</span> Raise funds for our relief program on Ketto.org
+
+  {% assign index__fund_proceeds_card = "shadow-on-hover-grow col-12 rounded-lg p-3 px-md-4 mb-3 d-flex flex-row align-items-center" %}
+
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto">
+      <div class="row">
+        <div class="{{ index__fund_proceeds_card }}">
+          <ion-icon class="h4 mr-3 text-muted" name="card"></ion-icon> Raise funds for our relief program on Ketto.org
+        </div>
+        <div class="{{ index__fund_proceeds_card }}">
+          <ion-icon class="h4 mr-3 text-muted" name="medkit"></ion-icon> Buy necessary medical equipment for COVID care
+        </div>
+        <div class="{{ index__fund_proceeds_card }}">
+          <ion-icon class="h4 mr-3 text-muted" name="people"></ion-icon>Ensure healthcare for everyone
+        </div>
       </div>
-      <div class="lead">
-        <span class="text-primary lead">&check;</span> Buy necessary medical equipment for COVID care
-      </div>
-      <div class="lead">
-        <span class="text-primary lead">&check;</span> Ensure healthcare for everyone
-      </div>
-    </div>
-    <div class="col-12 col-md-4 d-none d-md-block">
-      <img class="img-fluid" src="/assets/media/landing/donate/arrow-2886223_1280.jpg" />
     </div>
   </div>
 {% endcapture %}
@@ -192,7 +194,8 @@ layout: default
 
 
 {% capture section5 %}
-  <div class="row mb-4">
+  <div class="row">
+
     <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto text-justify">
       Each and every one of us at DFY are working round the clock
       to ensure that our COVID relief work reaches
