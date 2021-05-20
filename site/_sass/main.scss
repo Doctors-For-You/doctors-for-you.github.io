@@ -55,3 +55,25 @@
     color: $primary !important;
   }
 }
+
+///////////////////////////////////////
+@keyframes animatedBackground {
+	from { left: -15%; }
+	to { left: 115%; }
+}
+#green-glow {
+  height: 60%;
+  width: 15%;
+  background-image: linear-gradient(to right, rgba($success, 0), rgba($success, 0.6));
+  top: 20%;
+  left: 0;
+  animation: animatedBackground 4s linear infinite;
+}
+
+#green-mask {
+  // height: 100%;
+  // width: 100%;
+  // top: 0;
+  // left: 0;
+}
+/////////////////////////////////////

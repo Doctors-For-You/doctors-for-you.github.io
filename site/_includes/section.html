@@ -10,8 +10,9 @@
 {% assign vertical_padding_class = "py-5" %}
 {% endif %}
 
-<div class="{{ include.bg_class }} section_outer"
+<div class="{{ include.bg_class }} section_outer position-relative"
   style="background-image: url({{ include.bg_image }});">
+  {{ include.backdrop_div }}
   <div class="{{ container_class }} {{ vertical_padding_class }}">
     {{ include.content }}
   </div>
