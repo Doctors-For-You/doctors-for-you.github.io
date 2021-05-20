@@ -87,8 +87,8 @@ layout: default
 {% capture section3 %}
   <div class="row py-3">
     <div class="col-12 text-center mb-3">
-      <h2>Your contributions</h2>
-      <div class="lead">&hellip; so far have helped us accomplish</div>
+      <h2>COVID 19 Response</h2>
+      <div class="lead">So far your contributions have helped us accomplish</div>
     </div>
   </div>
 
@@ -99,49 +99,49 @@ layout: default
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">17+</div>
+        <div class="h3 text-primary">33+</div>
         <div class="text-color-dark">COVID Care Centers</div>
       </div>
     </div>
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">56+</div>
+        <div class="h3 text-primary">65+</div>
         <div class="text-color-dark">Vaccination Centers</div>
       </div>
     </div>
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">2+ lakh</div>
+        <div class="h3 text-primary">2.5+ lakh</div>
         <div class="text-color-dark">People Vaccinated</div>
       </div>
     </div>
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">800+</div>
+        <div class="h3 text-primary">5000+</div>
         <div class="text-color-dark">High Quality Oxymeters</div>
       </div>
     </div>
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">150+</div>
+        <div class="h3 text-primary">1000+</div>
         <div class="text-color-dark">Patient Monitors</div>
       </div>
     </div>
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">1000+</div>
+        <div class="h3 text-primary">1500+</div>
         <div class="text-color-dark">Oxygen Cylinders</div>
       </div>
     </div>
 
     <div class="{{ index__contribution_card }}">
       <div class="{{ index__contribution_card_inner }}">
-        <div class="h3 text-primary">130</div>
+        <div class="h3 text-primary">700</div>
         <div class="text-color-dark">Oxygen Concentrators</div>
       </div>
     </div>
@@ -217,7 +217,7 @@ layout: default
       <div class="row px-3">
         <div class="col-12 text-right">
           <div>Thank you,</div>
-          <div class="text-color-dark">The Doctors For You Team</div>
+          <div class="text-color-dark mb-3">The Doctors For You Team</div>
           <div class="d-flex flex-row justify-content-end">
             {% for account in site.data.social.accounts %}
               <a href="{{ account.url }}"><ion-icon class="{{ account.color_class }} h4 ml-2" name="{{ account.icon }}"></ion-icon></a>
@@ -247,5 +247,6 @@ layout: default
 
 {% include section.html
   bg_class="bg-white"
+  py_class="pt-0 pb-4"
   content=section6
 %}
