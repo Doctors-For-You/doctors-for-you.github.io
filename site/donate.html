@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% capture donate_details %}
+<div class="row px-3">
+  <div class="col-12 col-md-8 mx-auto text-center mb-4">
+    <h1>Donate to DFY</h1>
+  </div>
+</div>
+
+<div class="row mx-n3 d-flex align-items-stretch">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 px-3 mb-3">
+    <div class="bg-white rounded shadow-on-hover-grow p-3">
+      <div class="d-flex flex-row align-items-center">
+        <div class="flex-grow-1">
+          Contribute to our Ketto campaign
+        </div>
+        <a role="button" class="btn btn-primary" href="https://www.ketto.org/fundraiser/dfyforcovidrelief">Continue to Ketto</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mx-n3 d-flex align-items-stretch">
+
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 px-3 mb-3">
+    <div class="bg-white rounded shadow-on-hover-grow py-4 px-3">
+      <h4 class="text-center mb-3">International Donations</h4>
+      <div class="text-center mb-4">Non-Indian passport holder? Please use this bank account.</div>
+      <div class="small">
+        <table class="table table-hover table-sm">
+          <tbody>
+            <tr>
+              <td scope="row" class="text-muted">Account name</td>
+              <td class="text-color-dark">Doctors For You FCRA Account</td>
+            </tr>
+            <tr>
+              <td scope="row" class="text-muted">Bank Name</td>
+              <td class="text-color-dark">SBI Bank</td>
+            </tr>
+            <tr>
+              <td scope="row" class="text-muted">Account Number</td>
+              <td class="text-color-dark">40102274264</td>
+            </tr>
+            <tr>
+              <td scope="row" class="text-muted">IFSC Code</td>
+              <td class="text-color-dark">SBIN0000691</td>
+            </tr>
+            <tr>
+              <td scope="row" class="text-muted">SWIFT Code</td>
+              <td class="text-color-dark">SBININBB104</td>
+            </tr>
+            <tr>
+              <td scope="row" class="text-muted">Branch Name</td>
+              <td class="text-color-dark">
+                FCRA Cell, 4th Floor,<br />
+                State Bank of India,<br />
+                New Delhi Main Branch,<br />
+                11, Sansad Marg, New Delhi-110001
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 px-3 d-flex flex-column mb-3">
+    <div class="bg-white rounded shadow-on-hover-grow py-4 px-3 flex-grow-1">
+      <h4 class="text-center mb-3">Donate Online</h4>
+      <div class="text-center mb-5">For Indian passport holders</div>
+      <div class="text-center">
+        <a role="button" class="btn btn-primary" href="https://payu.in/web/94629C95CC3A2F1E17001A7D15CAA47E">Donate via PayU</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=donate_details
+%}
