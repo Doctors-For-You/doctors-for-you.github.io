@@ -2,4 +2,27 @@
 layout: default
 ---
 
-Sorry the requested URL could not be found
+{% capture 404page %}
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2 class="mb-3 mb-md-4">Page Not Found</h2>
+      <div>
+        The page you requested does not exist or might have moved
+      </div>
+      <div class="d-flex flex-row align-items-center justify-content-center">
+        <a class="btn btn-primary btn-lg mx-3" role="button" href="/">
+          Go to homepage
+        </a>
+        <a class="btn btn-primary btn-lg mx-3" role="button" href="/donate">
+          Donate
+        </a>
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+
+{% include section.html
+  bg_class="bg-white"
+  content=404page
+%}
