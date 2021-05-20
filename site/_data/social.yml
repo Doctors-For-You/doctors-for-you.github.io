@@ -1,0 +1,26 @@
+accounts: [
+  {
+    name: "facebook",
+    url: "https://www.facebook.com/DFYIndia/",
+    icon: "logo-facebook",
+    color_class: "color-facebook",
+  },
+  {
+    type: "twitter",
+    url: "https://twitter.com/dfynews",
+    icon: "logo-twitter",
+    color_class: "color-twitter",
+  },
+  {
+    type: "instagram",
+    url: "https://www.instagram.com/dfyindia/",
+    icon: "logo-instagram",
+    color_class: "color-instagram",
+  },
+  {
+    type: "linkedin",
+    url: "https://www.linkedin.com/company/doctors-for-you/",
+    icon: "logo-linkedin",
+    color_class: "color-linkedin",
+  },
+]

@@ -1,12 +1,36 @@
 {% capture footer %}
 <div class="row py-4">
-  <div class="col-12 col-md-6 offset-md-3 text-center">
-    <h5>Doctors For You</h5>
-    <div>There for you</div>
+  <div class="col-12 col-md-4 mb-3">
+    <div style="width: 128px;">
+      {% include image.html src="/assets/media/brand/logo-bw-rect.png" extra_class="img-fluid" %}
+    </div>
+    <div class="small" style="letter-spacing: 1.4px;">THERE TO CARE</div>
+    <div class="h6 text-white mt-4">
+      Contact Us
+    </div>
+    <div class="small">
+      Flat No - 101/102,<br />
+      Building Number - 31<br />
+      Natwar Parikh Compound,<br />
+      Near India Oil Nagar,Govandi<br />
+      Mumbai-400043<br />
+      Maharashtra, INDIA
+    </div>
+    <div class="d-flex flex-row justify-content-start mt-4">
+      {% for account in site.data.social.accounts %}
+        <a href="{{ account.url }}"><ion-icon class="text-muted h4 mr-3" name="{{ account.icon }}"></ion-icon></a>
+      {% endfor %}
+    </div>
   </div>
-  <div class="col-12 col-md-3 text-center text-md-right">
+  <div class="col-12 col-md-4 mb-3">
+    <div class="h6 text-white">We are on Twitter</div>
     <a class="twitter-timeline" href="https://twitter.com/DFYIndia" data-widget-id="689701075218132992">Tweets by @DFYIndia</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+  <div class="col-12 col-md-4 mb-3">
+    <div class="h6 text-white">Follow us on Facebook</div>
+    <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDoctors-For-You-DFY%2F232105786840621&amp;width=350&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=184023885079232" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:260px;" allowtransparency="true"></iframe>
   </div>
 </div>
 {% endcapture %}
@@ -14,15 +38,15 @@
 
 {% capture copyright %}
 <div class="row py-3">
-  <div class="col-12 col-md-6 offset-md-3 text-center fine-print">
+  <div class="col-12 col-md-6 offset-md-3 text-center fine-print text-color-dark">
     &copy; 2020 Doctorsforyou. All Rights Reserved
   </div>
   <div class="col-12 col-md-3 text-center text-md-right fine-print">
-    Privacy Policy
+    <a href="/privacy" class="text-color-dark text-decoration-none">Privacy Policy</a>
   </div>
 </div>
 {% endcapture %}
 
 
-{% include section.html bg_class="bg-dark-alt" content=footer %}
-{% include section.html bg_class="bg-dark" content=copyright %}
+{% include section.html bg_class="bg-dark-alt" py_class="py-3" content=footer %}
+{% include section.html bg_class="bg-dark" py_class="py-1" content=copyright %}

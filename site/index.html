@@ -219,10 +219,9 @@ layout: default
           <div>Thank you,</div>
           <div class="text-color-dark">The Doctors For You Team</div>
           <div class="d-flex flex-row justify-content-end">
-            <a href="#"><ion-icon class="color-facebook h4 ml-2" name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon class="color-twitter h4 ml-2" name="logo-twitter"></ion-icon></a>
-            <a href="#"><ion-icon class="color-instagram h4 ml-2" name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon class="color-linkedin h4 ml-2" name="logo-linkedin"></ion-icon></a>
+            {% for account in site.data.social.accounts %}
+              <a href="{{ account.url }}"><ion-icon class="{{ account.color_class }} h4 ml-2" name="{{ account.icon }}"></ion-icon></a>
+            {% endfor %}
           </div>
         </div>
       </div>
