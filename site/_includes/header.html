@@ -5,8 +5,11 @@
   data-event-label="Doctors For You Nav Logo"
   data-event-category="header_nav"
 >
+  {% include image.html src="/assets/media/brand/logo-color-rect.png" extra_class="" %}
+{% comment %}
   {% include image.html src="/assets/media/brand/logo-color-rect.png" extra_class="d-none d-sm-inline-block" %}
   {% include image.html src="/assets/media/brand/logo-color-square.png" extra_class="d-inline-block d-sm-none" %}
+{% endcomment %}
 </a>
 {% endcapture %}
 
@@ -20,19 +23,19 @@
     aria-controls="navbarMenu" aria-expanded="false"
     aria-label="Toggle navigation"
   >
-    <ion-icon id="navmenuicon" name="menu-sharp"></ion-icon>
-    <ion-icon id="navcloseicon" name="close"></ion-icon>
+    <ion-icon class="h3" id="navmenuicon" name="menu-sharp"></ion-icon>
+    <!-- <ion-icon id="navcloseicon" name="close"></ion-icon> -->
   </button>
 
   {{ logo }}
 
   <a
     role="button" href="/donate"
-    class="btn btn-link btn-ionicon d-md-none" aria-label="Donate"
+    class="btn btn-link btn-ionicon d-md-none d-flex align-items-center" aria-label="Donate"
     data-event-category="header_nav"
     data-event-label="Donate"
   >
-    <span class="mr-1 text-primary">Donate</span>
+    <div class="mr-2 text-primary">Donate</div>
     <ion-icon class="text-primary" name="chevron-forward-sharp"></ion-icon>
   </a>
 
