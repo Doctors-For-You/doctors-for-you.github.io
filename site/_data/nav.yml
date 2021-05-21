@@ -1,5 +1,9 @@
 headerMenu: [
   {
+    text: "Covid",
+    target: "/covid",
+  },
+  {
     text: "Who we are",
     data: [
       { text: 'About Us', icon: 'person', target: '/about-us' },
@@ -28,19 +32,15 @@ headerMenu: [
     ],
   },
   # {
-  #   text: "Partners",
-  #   target: "/how-to/introduction",
+  #   text: "Publications",
+  #   data: [
+  #     { text: 'Reports & Data', icon: 'folder', target: '/about-us' },
+  #     { text: 'Newsletters', icon: 'newspaper', target: '/about-us' },
+  #     { text: 'Blog', icon: 'reader', target: '/about-us' },
+  #     { text: 'Gallery', icon: 'image', target: '/about-us' },
+  #     { text: 'Media Center', icon: 'videocam', target: '/about-us' },
+  #   ],
   # },
-  {
-    text: "Publications",
-    data: [
-      { text: 'Reports & Data', icon: 'folder', target: '/about-us' },
-      { text: 'Newsletters', icon: 'newspaper', target: '/about-us' },
-      { text: 'Blog', icon: 'reader', target: '/about-us' },
-      { text: 'Gallery', icon: 'image', target: '/about-us' },
-      { text: 'Media Center', icon: 'videocam', target: '/about-us' },
-    ],
-  },
   {
     text: "Get involved",
     data: [
