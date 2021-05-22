@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+{% capture donate_filter %}
+<div class="row px-3">
+  <div class="col-12 col-md-8 mx-auto text-center mb-4">
+    <h1>Find your nearest COVID Center</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 px-3 mb-0">
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active d-flex flex-row align-items-center" data-toggle="tab" href="#vaccination_centers">
+          <ion-icon name="medkit" class="text-muted my-0 mr-2 lead"></ion-icon>
+          <div>Vaccination centers</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#covid_centers">
+          <ion-icon name="home" class="text-muted my-0 mr-2 lead"></ion-icon>
+          <div>Covid centers</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  py_class="pt-5 pb-0"
+  content=donate_filter
+%}
+
+{% capture covid_centers_tab %}
+{% for center in site.data.covid_centers %}
+<div class="bg-white rounded shadow-sm p-3 mb-3 d-flex flex-column flex-md-row justify-content-between">
+  <div class="flex-shrink-1 d-flex flex-column align-items-start">
+    <div class="text-color-dark">{{ center.Name_of_the_Center }}</div>
+    <div class="d-flex flex-row align-items-center">
+      <ion-icon name="person" class="text-muted m-0 mr-1"></ion-icon>
+      <div class="text-color-dark small">{{ center.Contact }}</div>
+      <ion-icon name="call" class="text-muted ml-3 mr-1"></ion-icon>
+      <div class="text-color-dark small">{{ center.Number }}</div>
+    </div>
+  </div>
+  <div class="flex-shrink-1 d-flex flex-column align-items-start align-items-md-end text-md-right mt-3 mt-md-0">
+    <div class="text-muted small" style="line-height: 1.2;">
+      {{ center.Address | split: ", " | join: "<br />" }}
+    </div>
+    <div class="small">{{ center.City }}, {{ center.State }}</div>
+  </div>
+</div>
+{% endfor %}
+{% endcapture %}
+
+{% capture vaccination_centers_tab %}
+{% for center in site.data.vaccination_centers %}
+<div class="bg-white rounded shadow-sm p-3 mb-3 d-flex flex-column flex-md-row justify-content-between">
+  <div class="flex-shrink-1 d-flex flex-column align-items-start">
+    <div class="text-color-dark">{{ center.Name }}</div>
+    <div class="d-flex flex-row align-items-center">
+      <ion-icon name="person" class="text-muted m-0 mr-1"></ion-icon>
+      <div class="text-color-dark small">{{ center.Doctors_Center_incharge }}</div>
+      <ion-icon name="call" class="text-muted ml-3 mr-1"></ion-icon>
+      <div class="text-color-dark small">{{ center.Contact_Number }}</div>
+    </div>
+  </div>
+  <div class="flex-shrink-1 d-flex flex-column align-items-start align-items-md-end text-md-right mt-3 mt-md-0">
+    <div class="text-muted small" style="line-height: 1.2;">
+      {{ center.Address | split: ", " | join: "<br />" }}
+    </div>
+    <div class="small">{{ center.City }}, {{ center.State }}</div>
+  </div>
+</div>
+{% endfor %}
+{% endcapture %}
+
+{% capture donate_tabpanes %}
+<div class="row">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 p-0 mb-4">
+    <div class="tab-content overflow-auto p-3" style="max-height: 400px;">
+      <div class="tab-pane active" id="vaccination_centers" role="tabpanel" aria-labelledby="vaccination_centers_tab">{{ vaccination_centers_tab }}</div>
+      <div class="tab-pane" id="covid_centers" role="tabpanel" aria-labelledby="covid_centers_tab">{{ covid_centers_tab }}</div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  py_class="pt-4 pb-5"
+  content=donate_tabpanes
+%}
+
+{% capture partners %}
+<div class="row">
+  <div class="col-12 mb-4 text-center">
+    <h2>Our Partners</h2>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=partners
+%}

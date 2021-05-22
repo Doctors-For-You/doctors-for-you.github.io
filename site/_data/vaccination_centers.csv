@@ -1,0 +1,56 @@
+S.No,State,City,Name,Type,City,Doctors_Center_incharge,Contact_Number,Alt Contact Number,Address,GOOGLE ADDRESS
+1,Andhra Pradesh,Vijayawada,Vuyyuru,RURAL ,Vijayawada,Dr Srinivas,8951590059,9100813057,"Vuyyur Hospital
+Katuru Rd, near Sri Viswasanthi Educational Institutions, Sowbhagya Nagar, Vuyyuru, Andhra Pradesh 521165",https://g.co/kgs/iXLK5V
+2,Andhra Pradesh,Vijayawada,Kotha Peta,RURAL ,Vijayawada,Dr Sunanda,8639518866,8790689392,"Kothepeta CHC
+Sheik Raja community health centre
+Kothapeta , near KBN college
+Vijayawada",https://maps.app.goo.gl/7o4ugDVDxSZWWEkd9
+3,Andhra Pradesh,Vijayawada,Gannavaram,URBAN ,Vijayawada,Dr Jyothi,7993015246,9515437599,"Gannavaram
+Community health center
+opp.Ramalayam
+kotha pet Highway Gannavaram.
+Pin code 521101",https://g.co/kgs/EuD7FZ
+4,Tamil Nadu,Chennai,KODUNGAYUR,URBAN ,,VIGNESH,8220445990,,"Government Hospital Kannan St, Meenambal Nagar, Kumaraswami Nagar, Old Washermanpet, Chennai, Tamil Nadu 600021",
+5,Tamil Nadu,Chennai,THIRUVOTTIYUR,URBAN ,,RR. NAVEEN KUMAR,9789760289,,"UCHC 945A, Thiruvottiyur High Rd, Sathya Moorthy Nagar, Rajakadai, Tiruvottiyur, Chennai, Tamil Nadu 600019",
+6,Tamil Nadu,Chennai,MADHAVARAM,URBAN ,,VIGNESH,6380857973,,"No 1, Thattankulam Street, Bazar Road, Madhavaram, Chennai, Tamil Nadu 600060",
+7,UP,Lucknow,Indranagar,URBAN ,,Dr. Utkarsh,8860909369,,"UCHC SEC.C, SEC.18 Indranagar Lucknow 226016",
+8,UP,Lucknow,Aliganj,URBAN ,,Dr. Utkarsh,8860909369,,UCHC Aliganj (Nehru bal vatika) Lucknow 226024,
+9,Tamil Nadu,Madurai,Thideer Nagar,URBAN ,,Dr. HAMSA USSAIN,9842817041,,"UPHC Thideer nagar, Periyar, Thideer Nagar, Madurai, Tamil Nadu 625001",https://goo.gl/maps/vie2mnmrif2TfhQt8
+10,JnK,Pulwama,Pampore,RURAL ,,Dr. Shazia,9596224670,7051417191,Sub District Hospital Pampore Pulwama,
+11,JnK,Pulwama,Tahab,RURAL ,,Dr.Irfan Gul,7006352199,"9797804077/
+7006356472",PHC Tahab Pulwama,
+12,Delhi,Delhi,Delhi,National Capital Teriority,,Dr. Naveen Tyagi,8527783874,9717518491,"ESIC HOSPITAL OKHLA PHASE-1, Okhla Village, Okhla, New Delhi, Delhi 110025",https://goo.gl/maps/EBWX99o4gxA6acKt9
+13,Delhi,Delhi,Delhi,National Capital Teriority,,Sunanda,8743006892,,"ESIC HOSPITAL OKHLA PHASE-1, Okhla Village, Okhla, New Delhi, Delhi 110025",https://goo.gl/maps/EBWX99o4gxA6acKt9
+14,U.P,NOIDA ,NOIDA SEC-22,URBAN,,Dr. Mukesh,8923737009,9024831760,"F-84A, SEC-22, NOIDA",https://goo.gl/maps/4Cpq8mPDbtdzGWuV6
+15,U.P,NOIDA ,MAMURA,RURAL,,RAVINDER,9024230034,79918 06940,"G.NO-7, SEC-66 UPHC MAMURA NOIDA",https://goo.gl/maps/26XyzmFCc8cHaAWB9
+16,U.P,NOIDA ,BAROLA,RURAL,,RAJESH,9694327358,9910320699,"RAM MEHRE COLONY, SEC-49 BAROLA, NOIDA",https://goo.gl/maps/Wb9FmNRqFe9aGvuB7
+17,U.P,NOIDA ,NOIDA HUSHIYARPUR,RURAL,,ASHWANI,9953715818,9953715818,"C-33, GALI NO 1, SEC-51, HUSHIYARPUR NOIDA",https://goo.gl/maps/YmA7x23x8iWAfdLD7
+18,U.P,NOIDA ,NOIDA SADARPUR,RURAL,,BALBEER,9509041645,7791814335,"G.NO- 37, UPHC SADARPUR, SEC-45,NOIDA",https://goo.gl/maps/3ZsPFzJdKwkFNyRx7
+19,Karnataka,Bangalore,SINGSANDRA ,RURAL ,,Dr. AISHWARYA ,8310024934,,"Hosur Rd, AECS Layout - A Block, Singasandra, Bengaluru, Karnataka 560100","https://www.google.com/maps/place/Government+Primary+Health+Center/@12.9146782,77.5868001,13z/data=!4m19!1m13!4m12!1m4!2m2!1d77.594624!2d12.9564672!4e1!1m6!1m2!1s0x3bae6b564050410d:0x8add951317ecf31f!2ssingasandra+phc!2m2!1d77.6521534!2d12.8723154!3m4!1s0x3bae6b564050410d:0x8add951317ecf31f!8m2!3d12.8723154!4d77.6521534"
+20,Karnataka,Bangalore,VASANTHAPURA ,URBAN ,,MEGHA P,9113842330,,"Maruthi layout assoiation Office,Vasanthapura main road",https://maps.app.goo.gl/QWqtTzMFsp6AUBi17
+21,Karnataka,Bangalore,ANJANAPURA TEAM 2,URBAN ,,Dr. ARUN C M ,8088087243,,"8th main road Srinidhi layout Chuchngatta main road Kothnur, Brigade Millennium Ave, Bengaluru, Karnataka 560076",https://goo.gl/maps/t7Mj6QYKa3HoKeMm9
+22,Karnataka,Bangalore,KONNAKUNTE ,URBAN ,, ESTHER RANI ,9110842113,,"Amruth Nagar Main Rd, Anjanadri Layout, Konanakunte, Bengaluru, Karnataka 560062","https://www.google.com/search?rlz=1C1GCEA_enIN912IN912&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk037uU4mFLwgLuoQ53dvx9Y78cLrKg:1619011289718&q=konanakunte+govt+hospital&rflfq=1&num=10&ved=2ahUKEwipgL6Gt4_wAhUYIbcAHasqBQMQtgN6BAgEEAc#rlfi=hd:;si:1140329819952246414,l,Chlrb25hbmFrdW50ZSBnb3Z0IGhvc3BpdGFsSLzgk67UlYCACFo0Cg1nb3Z0IGhvc3BpdGFsEAEQAhgAGAEYAiIZa29uYW5ha3VudGUgZ292dCBob3NwaXRhbJIBE2dvdmVybm1lbnRfaG9zcGl0YWyqARUQASoRIg1nb3Z0IGhvc3BpdGFsKAA;mv:[[12.9088376,77.5796618],[12.8827685,77.5602322]]"
+23,Karnataka,Bangalore,YELAHANKA ,URBAN ,,Dr SUSHMITHA ,8618606330,,"General Hospital
+Yelahanka, Bengaluru, Karnataka 560064",https://goo.gl/maps/RZDn96TRdBwULcaP9
+24,Karnataka,Bangalore,"BEGUR , Mobile Team",URBAN ,,Dr KAMANA POOJA SRAVANTHI ,7349552679,,"Begur War Room, Begur, Bengaluru, Karnataka 560076",https://goo.gl/maps/9Kij4qgYxRghg5g49
+25,Karnataka,Bangalore,UTTARAHALLI ,URBAN ,,Dr MEGHA ,9743967169,,"BBMP PU College, Subramanyapura Main Rd, Friends Colony, Uttarahalli Hobli, Bengaluru, Karnataka 560061",https://goo.gl/maps/NoV3scFvCZkar6y37
+26,Karnataka,Bangalore,KR PURAM -1,RURAL ,,Dr. Vinitha,9448589092,,"Government Hospital 2, Krishnarajapura, Bengaluru, Karnataka 560036",https://goo.gl/maps/dDh8XuTnbPKci6gp6
+27,Karnataka,Bangalore,KR PURAM -2,RURAL ,,Dr. Vinitha,9448589092,,"Government Hospital 2, Krishnarajapura, Bengaluru, Karnataka 560036",https://goo.gl/maps/WDfAmMAhq2LBiFE87
+28,Karnataka,Bangalore,HSR Layout (KUDULU GATE ),URBAN ,,Dr A G KIRAN ,9663624411,,"51/6, Kudlu Main Rd, Kudlu, VGP Layout, Bengaluru, Karnataka 560068",https://goo.gl/maps/uq7aCMCRCJ4Pv9L87
+29,Karnataka,Bangalore,ANEKAL ,RURAL ,,Dr SURESH M ,94494426164,,"Government Hospital , Anekal, Bengaluru, Karnataka 560036","https://www.google.com/maps/place/Government+Hospital/@12.7090496,77.6933855,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae6f790ecedbc3:0x9689d392b358112e!8m2!3d12.7090444!4d77.6955742"
+30,Karnataka,Bangalore,RBI LAYOUT ,URBAN ,,Dr. SANGEETHA G T ,9880251773,,"BBMP Ward 195 Office, Gaurav Nagar, Phase 7, J. P. Nagar, Bengaluru, Karnataka 560078",https://goo.gl/maps/EWQ5z7VuycKtAgVH9
+31,Karnataka,Bangalore,YELLACHANAHALLIN,URBAN ,,Dr. ARSHIYA S B ,9606244607,,"DMJ College Yelachenahalli Post, Post office Rd, J. P. Nagar, Bengaluru, Karnataka 560078",https://goo.gl/maps/aKgFRSzDQK6v6L8k6
+32,Karnataka,Bangalore,GOTTIGERE MOH OFFICE ,URBAN ,,Dr VEDHA ,9740169952,,",gottigere bbmp officeRoyal County Park, 1st Cross Rd, Royal County, 1st Phase, Gottigere, Kothnur, Karnataka 560083",https://goo.gl/maps/sJbBEEkDgQVPdXRP7
+33,Karnataka,Bangalore,UTTARAHALLI (GUBALALA),URBAN ,,Dr PUNEETH ,7411023379,,"Shaneshwara templeYadalam Nagar, Subramanyapura, Bengaluru, Karnataka 560061",https://goo.gl/maps/o6tvGyn2EimPCLFo8
+34,Bihar,Patna,MASHARI,RURAL ,,Dr. Ayesha/ Dr. Devdas,9783613045/6361291304,,Vistex-DFY Charitable hospita masarhi Patna,"https://www.google.com/maps/place/Vistex+Hospital/@25.4387662,85.2277605,18z/data=!4m12!1m6!3m5!1s0x39f2a39d9d4cb827:0x54eac643b7c4161b!2sVistex+Hospital!8m2!3d25.4386936!4d85.2288441!3m4!1s0x39f2a39d9d4cb827:0x54eac643b7c4161b!8m2!3d25.4386936!4d85.2288441"
+35,Bihar,Patna,PHC DANAPUR,RURAL ,,Dr. Gangdeep,9465911221,,Danapur PHC Khagual Patna,"https://www.google.com/maps/dir//Danapur+Sub+-+Divisional+Hospital,+Bibiganj,+Danapur,+Patna,+Bihar+801503/@25.6347424,85.0279751,14z/data=!4m9!4m8!1m1!4e2!1m5!1m1!1s0x39ed56f31ca85771:0x64f260e5cfc93f0f!2m2!1d85.0459162!2d25.6347591"
+36,Bihar,Patna,NEW GARDINER ROAD ,RURAL ,,Dr.Sarvottam,7739089580,,New Gardiner Hospital Patna,"https://www.google.com/maps/place/New+Gardiner+Road+Hospital/@25.6104252,85.1298432,18z/data=!4m12!1m6!3m5!1s0x39ed58413ec84883:0x1931f455673b6ffd!2sNew+Gardiner+Road+Hospital!8m2!3d25.6103527!4d85.1309107!3m4!1s0x39ed58413ec84883:0x1931f455673b6ffd!8m2!3d25.6103527!4d85.1309107"
+37,Maharashtra,Mumbai,Shatabdi Hospital,Urban,,Dr. Zaheer,9923476009,,"Pandit Madan Mohan Malviya Shatabdi Municipal General HospitalCentenary Building, WTP Marg, near Pepsi Company, Govandi East, Mumbai, Maharashtra 400088","https://www.google.com/maps/place/Pandit+Madan+Mohan+Malviya+Shatabdi+Municipal+General+Hospital/@19.0494288,72.9088952,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cf21727d5445:0xa478c3657162dce7!8m2!3d19.0494288!4d72.9110839"
+38,Maharashtra,Mumbai,Shivaji Nagar UHC,Urban,,Dr. Rachana,9320461202,,"Shivaji Nagar Municipal Hospital Ahilyabai Holkar Marg, Shivaji Nagar, Govandi East, Mumbai, Maharashtra 400043","https://www.google.com/maps/place/Shivaji+Nagar+Municipal+Hospital/@19.0630606,72.9165342,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c6144cfd1a19:0x7d154fccbab77a9a!8m2!3d19.0630606!4d72.9187229"
+39,Maharashtra,Mumbai,LBS Maternity Home,Urban,,Dr. Rhys,8867938718,,"Lal Bahadur Shastri Marg Maternity Home 1, Kukreja, Dina Bama Estate, Bhandup West, Mumbai, Maharashtra 400078","https://www.google.com/maps/place/Lal+Bahadur+Shastri+Marg+Maternity+Home/@19.1497925,72.9379018,17z/data=!4m5!3m4!1s0x3be7b864a063855d:0xabc9ea767165ba70!8m2!3d19.1497874!4d72.9400905"
+40,Maharashtra,Mumbai,Deonar Maternity Home,Urban,,Dr. Renuka,7718952903,,"H-3 Block, Deonar Municipal Colony, Deonar, Govandi East, Mumbai, Maharashtra 400043","https://www.google.com/maps/place/Deonar+Maternity+Home/@19.0528958,72.9246478,15z/data=!4m5!3m4!1s0x0:0x2d8d21a483632a3b!8m2!3d19.0528958!4d72.9246478"
+41,Maharashtra,Mumbai,"Charkop Sect 1 Dispensary, Kandivali",Urban,,-,,,"CHARKOP SEC. NO.1, SAHYADRI NAGAR, CHARKOP, KANDIVALI (WEST), MUMBAI 400067",
+42,Maharashtra,Mumbai,Parivar Kanjurmarg HP,Urban,,Dr. Shweta,,,"BMC, Pariwar Road, Mirashi Nagar, Kanjurmarg East, Mumbai, Maharashtra 400042","https://www.google.com/maps/place/BMC+Kanjur+Village+Health+Post./@19.1304503,72.9379122,15z/data=!4m5!3m4!1s0x0:0x3e5b664570156ae0!8m2!3d19.1304503!4d72.9379122"
+43,Maharashtra,Mumbai,Bhandup Maternity Home,Urban,,Dr. Suhash Anvanve,8898224548,,"Opposite to railway station, L.B.S, Maruti Mandir Rd, Bhandup, Bhandup West, Mumbai, Maharashtra 400078","https://www.google.com/maps/place/Savitribai+Jyotiba+Phule+Maternity+Home/@19.1462563,72.9344959,15z/data=!4m5!3m4!1s0x0:0x75d78423975baee3!8m2!3d19.1462563!4d72.9344959"
+44,Maharashtra,Mumbai,Tembhipada HP,Urban,,Dr. Suhash Jadhav,9820490407,,"Tembipada Municipality Marathi School No.1, Near Tembipada Market, Vaibhav chowk, Bhandup west,Mumbai-78","https://www.google.com/maps/place/Tembipada+Municipal+School/@19.1547446,72.9305372,15z/data=!4m5!3m4!1s0x0:0x7919e3dbf1960094!8m2!3d19.1548303!4d72.9305589"
+45,Maharashtra,Mumbai,Bhandup Village BMC School,Urban,,Dr. Apurva,9987105150,,"BMC Marathi School, Ahini Road, Bhandup Village, Krushna Nagar, Friends Colony, Bhandup East, Mumbai, Maharashtra 400042","https://www.google.com/maps/place/BMC+Marathi+School/@19.1506342,72.9447193,15z/data=!4m5!3m4!1s0x0:0x58baeaaa6f259168!8m2!3d19.1506355!4d72.9447482"

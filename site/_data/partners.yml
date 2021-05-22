@@ -1,0 +1,167 @@
+- name: Confederation of Indian Industry (CII)
+  type:
+  logo_image: "CII.jpg"
+
+- name: Direct Relief
+  type:
+  logo_image: "Direct-Relief.jpg"
+
+- name: Healthcare Information for All (HIFA)
+  type:
+  logo_image: "Hifa.jpg"
+
+- name: Association Of Inner Wheel Clubs In India
+  type:
+  logo_image: "IIW.jpg"
+
+- name: Nihchal Israni Foundation
+  type:
+  logo_image: "NI-Foundation.png"
+
+- name: Tata Institute of Social Sciences
+  type:
+  logo_image: "TISS.jpg"
+
+- name: Tata Memorial Centre
+  type:
+  logo_image: "TMC.jpg"
+
+- name: UNICEF India
+  type:
+  logo_image: "Unicef.jpg"
+
+- name: Votive Tech
+  type:
+  logo_image: "Votive.jpg"
+
+- name: ZHT
+  type:
+  logo_image: "ZHT.jpg"
+
+- name: Assam Disaster Management
+  type: govt_body
+  logo_image: assam-state.jpg
+
+- name:
+  type:
+  logo_image: "asdma.jpg"
+
+- name: Naraindas Morbai Budhrani Trust (NMBT)
+  type: corporate
+  logo_image: "b.jpg"
+
+- name: CARE India
+  type: organization
+  logo_image: "care.jpg"
+
+- name:
+  type:
+  logo_image: "chb.jpg"
+
+- name: CII Foundation
+  type:
+  logo_image: "cii-foundation.jpg"
+
+- name: CIPLA
+  type:
+  logo_image: "cipla.jpg"
+
+- name: Diversey
+  type:
+  logo_image: "diversey.jpg"
+
+- name: Gabriel
+  type:
+  logo_image: "gabriel.jpg"
+
+- name: Give India
+  type:
+  logo_image: "give-india.png"
+
+- name: Goonj
+  type:
+  logo_image: "goonj.jpg"
+
+- name: Goverment of Bihar
+  type:
+  logo_image: "govt-bihar.jpg"
+
+- name: Goverment of Jammu & Kashmir
+  type:
+  logo_image: "govt-jammu-kashmir.jpg"
+
+- name: HCL Foundation
+  type:
+  logo_image: "hcl-foundation.png"
+
+- name: Islamic Relief
+  type:
+  logo_image: "islamic-relief.jpg"
+
+- name: Johnson & Johnson
+  type:
+  logo_image: "j&j.jpg"
+
+- name:
+  type:
+  logo_image: "lancet-global-surgery.jpg"
+
+- name: Merck
+  type:
+  logo_image: "merck.jpg"
+
+- name: MERCY Malaysia
+  type:
+  logo_image: "mercury-malasiya.jpg"
+
+- name: Meenakshi Mission Hospital & Research Center (MMHRC)
+  type:
+  logo_image: "mmhrc.jpg"
+
+- name: Mumbai Railway Vikas Corporation Limited (MRVC)
+  type:
+  logo_image: "mrvc.jpg"
+
+- name: National Health Mission
+  type:
+  logo_image: "national-health-mission.jpg"
+
+- name: Qatar Red Crescent
+  type:
+  logo_image: "qatar-red-crescent.jpg"
+
+- name: Revised National Tuberculosis Control Programme
+  type:
+  logo_image: "rntcp.jpg"
+
+- name: Sealed Air
+  type:
+  logo_image: "sealed-air.jpg"
+
+- name: SELCO Foundation
+  type:
+  logo_image: "selco-foundation.png"
+
+- name: Sphere India
+  type:
+  logo_image: "sphere.jpg"
+
+- name: Sundara
+  type:
+  logo_image: "sundara.jpg"
+
+- name: Tata Trusts
+  type:
+  logo_image: "tata-trusts.jpg"
+
+- name: Vistex Foundation
+  type:
+  logo_image: "vistex-foundation.jpg"
+
+- name: Vitamin Angels
+  type:
+  logo_image: "vitamin-angels.jpg"
+
+- name: Wipro
+  type:
+  logo_image: "wipro.jpg"
