@@ -32,6 +32,12 @@
     {% comment %} https://ionicons.com/usage {% endcomment %}
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
+    {% for inlinejs in page.inlinejs %}
+      <script type="text/javascript">
+        {%- include {{ inlinejs }} -%}
+      </script>
+    {% endfor %}
+
   </body>
 
 </html>

@@ -42,10 +42,6 @@
   type: govt_body
   logo_image: assam-state.jpg
 
-- name:
-  type:
-  logo_image: "asdma.jpg"
-
 - name: Naraindas Morbai Budhrani Trust (NMBT)
   type: corporate
   logo_image: "b.jpg"
@@ -102,7 +98,7 @@
   type:
   logo_image: "j&j.jpg"
 
-- name:
+- name: Lancet Global Surgery
   type:
   logo_image: "lancet-global-surgery.jpg"
 
