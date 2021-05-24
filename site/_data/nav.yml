@@ -4,22 +4,6 @@ headerMenu: [
     target: "/covid",
   },
   {
-    text: "Who we are",
-    data: [
-      { text: 'About Us', icon: 'person', target: '/about-us' },
-      { text: 'Our History', icon: 'cellular', target: '/history' },
-      { text: 'Our Team Members', icon: 'people', target: '/team' },
-      { text: 'Governing Body', icon: 'business', target: '/governing-body' },
-      { divider: true },
-      { text: 'Our Patrons, Advisory & Inspiration', icon: 'color-filter', target: '/patrons' },
-      { text: 'Partners', icon: 'duplicate', target: '/partners' },
-      { divider: true },
-      { text: 'Awards and Recognition', icon: 'ribbon', target: '/awards-recognitions' },
-      { text: 'Vision, Mission & Core Values', icon: 'sparkles', target: '/vision-mission' },
-      { text: 'Guidelines & Policies', icon: 'trail-sign', target: '/policy-guidelines' },
-    ],
-  },
-  {
     text: "What we do",
     data: [
       { text: 'Public Health', icon: 'accessibility', target: '/about-us' },
@@ -31,6 +15,35 @@ headerMenu: [
       { text: 'Lancet Global Surgery Program', icon: 'planet', target: '/about-us' },
     ],
   },
+  {
+    text: "About Us",
+    data: [
+      { text: 'About Us', icon: 'person', target: '/about-us' },
+      # { text: 'About Us', icon: 'person', target: '/about-us' },
+      # { text: 'Our History', icon: 'cellular', target: '/history' },
+      # { text: 'Our Team Members', icon: 'people', target: '/team' },
+      # { text: 'Governing Body', icon: 'business', target: '/governing-body' },
+      # { divider: true },
+      # { text: 'Our Patrons, Advisory & Inspiration', icon: 'color-filter', target: '/patrons' },
+      # { text: 'Partners', icon: 'duplicate', target: '/partners' },
+      # { divider: true },
+      # { text: 'Awards and Recognition', icon: 'ribbon', target: '/awards-recognitions' },
+      # { text: 'Vision, Mission & Core Values', icon: 'sparkles', target: '/vision-mission' },
+      # { text: 'Guidelines & Policies', icon: 'trail-sign', target: '/policy-guidelines' },
+    ],
+  },
+  # {
+  #   text: "What we do",
+  #   data: [
+  #     { text: 'Public Health', icon: 'accessibility', target: '/about-us' },
+  #     { text: 'Emergency Relief & Response', icon: 'medkit', target: '/about-us' },
+  #     { text: 'Rehabilitation', icon: 'home', target: '/about-us' },
+  #     { text: 'Capacity Building', icon: 'bar-chart', target: '/about-us' },
+  #     { text: 'Water Sanitation and Hygiene (WASH)', icon: 'water', target: '/about-us' },
+  #     { text: 'Community Development Initiative', icon: 'podium', target: '/about-us' },
+  #     { text: 'Lancet Global Surgery Program', icon: 'planet', target: '/about-us' },
+  #   ],
+  # },
   # {
   #   text: "Publications",
   #   data: [

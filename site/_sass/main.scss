@@ -77,3 +77,25 @@
   // left: 0;
 }
 /////////////////////////////////////
+
+// .center-cropped {
+//   object-fit: none; /* Do not scale the image */
+//   object-position: center; /* Center the image within the element */
+//   height: 100px;
+//   width: 100px;
+// }
+
+.center-cropped {
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  @include media-breakpoint-down(xs) { width: 110px; height: 110px; }
+  @include media-breakpoint-down(sm) { width: 140px; height: 140px; }
+  @include media-breakpoint-down(md) { width: 160px; height: 160px; }
+  // @include media-breakpoint-down(md) {  }
+  // @include media-breakpoint-down(lg) {  }
+  border: 2px solid $border-color;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

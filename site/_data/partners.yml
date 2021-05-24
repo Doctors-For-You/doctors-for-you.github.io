@@ -1,45 +1,45 @@
 - name: Confederation of Indian Industry (CII)
-  type:
+  type: corporate
   logo_image: "CII.jpg"
 
 - name: Direct Relief
-  type:
+  type: organization
   logo_image: "Direct-Relief.jpg"
 
 - name: Healthcare Information for All (HIFA)
-  type:
+  type: organization
   logo_image: "Hifa.jpg"
 
 - name: Association Of Inner Wheel Clubs In India
-  type:
+  type: institution
   logo_image: "IIW.jpg"
 
 - name: Nihchal Israni Foundation
-  type:
+  type: institution
   logo_image: "NI-Foundation.png"
 
 - name: Tata Institute of Social Sciences
-  type:
+  type: institution
   logo_image: "TISS.jpg"
 
 - name: Tata Memorial Centre
-  type:
+  type: institution
   logo_image: "TMC.jpg"
 
 - name: UNICEF India
-  type:
+  type: organization
   logo_image: "Unicef.jpg"
 
 - name: Votive Tech
-  type:
+  type: institution
   logo_image: "Votive.jpg"
 
 - name: ZHT
-  type:
+  type: institution
   logo_image: "ZHT.jpg"
 
 - name: Assam Disaster Management
-  type: govt_body
+  type: institution
   logo_image: assam-state.jpg
 
 - name: Naraindas Morbai Budhrani Trust (NMBT)
@@ -50,114 +50,114 @@
   type: organization
   logo_image: "care.jpg"
 
-- name:
-  type:
+- name: Children's Hospital Boston
+  type: institution
   logo_image: "chb.jpg"
 
 - name: CII Foundation
-  type:
+  type: institution
   logo_image: "cii-foundation.jpg"
 
 - name: CIPLA
-  type:
+  type: corporate
   logo_image: "cipla.jpg"
 
 - name: Diversey
-  type:
+  type: corporate
   logo_image: "diversey.jpg"
 
 - name: Gabriel
-  type:
+  type: organization
   logo_image: "gabriel.jpg"
 
 - name: Give India
-  type:
+  type: corporate
   logo_image: "give-india.png"
 
 - name: Goonj
-  type:
+  type: organization
   logo_image: "goonj.jpg"
 
 - name: Goverment of Bihar
-  type:
+  type: govt_body
   logo_image: "govt-bihar.jpg"
 
 - name: Goverment of Jammu & Kashmir
-  type:
+  type: corporate
   logo_image: "govt-jammu-kashmir.jpg"
 
 - name: HCL Foundation
-  type:
+  type: corporate
   logo_image: "hcl-foundation.png"
 
 - name: Islamic Relief
-  type:
+  type: organization
   logo_image: "islamic-relief.jpg"
 
 - name: Johnson & Johnson
-  type:
+  type: corporate
   logo_image: "j&j.jpg"
 
 - name: Lancet Global Surgery
-  type:
+  type: institution
   logo_image: "lancet-global-surgery.jpg"
 
 - name: Merck
-  type:
+  type: corporate
   logo_image: "merck.jpg"
 
 - name: MERCY Malaysia
-  type:
+  type: organization
   logo_image: "mercury-malasiya.jpg"
 
 - name: Meenakshi Mission Hospital & Research Center (MMHRC)
-  type:
+  type: govt_body
   logo_image: "mmhrc.jpg"
 
 - name: Mumbai Railway Vikas Corporation Limited (MRVC)
-  type:
+  type: corporate
   logo_image: "mrvc.jpg"
 
 - name: National Health Mission
-  type:
+  type: organization
   logo_image: "national-health-mission.jpg"
 
 - name: Qatar Red Crescent
-  type:
+  type: institution
   logo_image: "qatar-red-crescent.jpg"
 
 - name: Revised National Tuberculosis Control Programme
-  type:
+  type: govt_body
   logo_image: "rntcp.jpg"
 
 - name: Sealed Air
-  type:
+  type: corporate
   logo_image: "sealed-air.jpg"
 
 - name: SELCO Foundation
-  type:
+  type: corporate
   logo_image: "selco-foundation.png"
 
 - name: Sphere India
-  type:
+  type: organization
   logo_image: "sphere.jpg"
 
 - name: Sundara
-  type:
+  type: organization
   logo_image: "sundara.jpg"
 
 - name: Tata Trusts
-  type:
+  type: institution
   logo_image: "tata-trusts.jpg"
 
 - name: Vistex Foundation
-  type:
+  type: corporate
   logo_image: "vistex-foundation.jpg"
 
 - name: Vitamin Angels
-  type:
+  type: organization
   logo_image: "vitamin-angels.jpg"
 
 - name: Wipro
-  type:
+  type: corporate
   logo_image: "wipro.jpg"
