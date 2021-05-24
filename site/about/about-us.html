@@ -131,6 +131,36 @@ permalink: /about-us
   content=patrons
 %}
 
+{% capture awards_carousel %}
+<div id="awardCarouselCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for award in site.data.awards %}
+      <li data-target="#awardCarouselCaptions" data-slide-to="{{ forloop.index }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner">
+
+    {% for award in site.data.awards %}
+    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <img src="/assets/media/awards/{{ award.image }}" class="d-block w-100 rounded" alt="">
+      <div class="small text-color-dark text-center">
+        {{ award.name }}
+      </div>
+    </div>
+    {% endfor %}
+
+    <a class="carousel-control-prev" href="#awardCarouselCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#awardCarouselCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+{% endcapture %}
+
 {% capture awards %}
 <div class="row align-items-center">
   <div class="col-12 col-sm-6 col-md-8 mb-4">
@@ -140,34 +170,7 @@ permalink: /about-us
     </div>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-4">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-
-      </ol>
-      <div class="carousel-inner">
-
-        {% for award in site.data.awards %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          <img src="/assets/media/awards/{{ award.image }}" class="d-block w-100 rounded" alt="">
-          <div class="small text-color-dark text-center">
-            {{ award.name }}
-          </div>
-        </div>
-        {% endfor %}
-
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
+    {{ awards_carousel }}
   </div>
 </div>
 {% endcapture %}
