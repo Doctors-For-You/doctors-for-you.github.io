@@ -17,20 +17,7 @@ headerMenu: [
   },
   {
     text: "About Us",
-    data: [
-      { text: 'About Us', icon: 'person', target: '/about-us' },
-      # { text: 'About Us', icon: 'person', target: '/about-us' },
-      # { text: 'Our History', icon: 'cellular', target: '/history' },
-      # { text: 'Our Team Members', icon: 'people', target: '/team' },
-      # { text: 'Governing Body', icon: 'business', target: '/governing-body' },
-      # { divider: true },
-      # { text: 'Our Patrons, Advisory & Inspiration', icon: 'color-filter', target: '/patrons' },
-      # { text: 'Partners', icon: 'duplicate', target: '/partners' },
-      # { divider: true },
-      # { text: 'Awards and Recognition', icon: 'ribbon', target: '/awards-recognitions' },
-      # { text: 'Vision, Mission & Core Values', icon: 'sparkles', target: '/vision-mission' },
-      # { text: 'Guidelines & Policies', icon: 'trail-sign', target: '/policy-guidelines' },
-    ],
+    target: "/about-us",
   },
   # {
   #   text: "What we do",
@@ -64,3 +51,18 @@ headerMenu: [
     ],
   },
 ]
+
+# data: [
+#   { text: 'About Us', icon: 'person', target: '/about-us' },
+#   # { text: 'About Us', icon: 'person', target: '/about-us' },
+#   # { text: 'Our History', icon: 'cellular', target: '/history' },
+#   # { text: 'Our Team Members', icon: 'people', target: '/team' },
+#   # { text: 'Governing Body', icon: 'business', target: '/governing-body' },
+#   # { divider: true },
+#   # { text: 'Our Patrons, Advisory & Inspiration', icon: 'color-filter', target: '/patrons' },
+#   # { text: 'Partners', icon: 'duplicate', target: '/partners' },
+#   # { divider: true },
+#   # { text: 'Awards and Recognition', icon: 'ribbon', target: '/awards-recognitions' },
+#   # { text: 'Vision, Mission & Core Values', icon: 'sparkles', target: '/vision-mission' },
+#   # { text: 'Guidelines & Policies', icon: 'trail-sign', target: '/policy-guidelines' },
+# ],

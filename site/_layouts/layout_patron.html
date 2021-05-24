@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% for item in site.data.patrons %}
+  {% if item.name == page.patron_name %}
+    {% assign patron = item %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% capture patron_content %}
+<div class="row px-3">
+  <div class="col-12 col-md-8 mx-auto text-center mb-4">
+    <h2 class="mb-3">{{ patron.name }}</h2>
+    <div class="d-flex flex-column align-items-center">
+      <img
+        class="rounded mb-4"
+        style="width: 150px;"
+        src="/assets/media/about/{{ patron.image }}"
+      />
+    </div>
+
+    {% for para_item in patron.para %}
+    <div class="small text-justify mb-3">
+      {{ para_item}}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=patron_content
+%}
