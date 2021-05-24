@@ -181,3 +181,38 @@ permalink: /about-us
   bg_class="bg-light"
   content=awards
 %}
+
+
+{% capture mission_vission %}
+<div class="row">
+  <div class="col-12 col-sm-5 offset-sm-1 col-lg-4 offset-lg-0 mb-4 text-center">
+    <div class="h3 mb-3">Vision</div>
+    <div class="h3 text-muted">
+      "Health For All"
+    </div>
+  </div>
+  <div class="col-12 col-sm-5 col-lg-4 mb-4 text-center">
+    <div class="h3 mb-3">Mission</div>
+    <div class="text-justify small">
+      Providing sustainable, equitable, effective and efficient health care services to the most vulnerable individuals and communities.
+    </div>
+  </div>
+  <div class="col-12 col-lg-4 mb-4 text-center">
+    <h3 class="mb-3">Guiding Principles</h3>
+    <div class="text-muted mb-3">The building blocks which help us achieve our mission:</div>
+    <div class="small text-center">
+      <ul class="list-unstyled">
+        <li>Rapid response</li>
+        <li>Accountable to our Partners, Donors & Communities</li>
+        <li>Community Participation in decision making</li>
+        <li>Neutrality & Non-Political</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=mission_vission
+%}
