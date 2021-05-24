@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 {% capture public_health %}
 <div class="row align-items-center">
   <div class="col-12 col-md-5 text-center">
@@ -41,4 +40,43 @@ layout: default
 {% include section.html
   bg_class="bg-light"
   content=public_health
+%}
+
+
+{% capture healthcare-strengthening %}
+  2. Health care system strengthening ( Infrastructure support, Capacity Building and evidence based policy)
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=healthcare-strengthening
+%}
+
+{% capture healthcare-devices %}
+3. Primary Health care devices ( Prevention and management of Communicable and Non communicable diseases)
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=healthcare-devices
+%}
+
+
+{% capture disaster-management %}
+4. Disaster management ( emergency response, relief and rehabilitation)
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=disaster-management
+%}
+
+
+{% capture community-development %}
+5. Community development initiative
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=community-development
 %}
