@@ -1,0 +1,3 @@
+- name: NCD Project
+  image: /public-health/NCD-Project.jpg
+  target: /project/ncd

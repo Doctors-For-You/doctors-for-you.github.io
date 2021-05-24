@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+
+{% capture public_health %}
+<div class="row align-items-center">
+  <div class="col-12 col-md-5 text-center">
+    <h2 class="mb-3 text-center text-md-left">Public Health</h2>
+    <div class="mb-4 text-justify">
+      DFY is involved in building rapid emergency medical response team for the acute early emergency phase of disasters and complex emergencies. The development of the Emergency Response Unit aims at achieving faster and better quality deployment through careful planning and preparedness.
+    </div>
+  </div>
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-7 offset-md-0">
+    <div class="bg-dark rounded p-2">
+      <div id="publicHealthCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          {% for project in site.data.public_health_projects %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <img src="/assets/media/{{ project.image }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
+            <div class="text-center">
+              <a class="text-decoration-none text-white" href="{{ project.target }}">{{ project.name }}</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#publicHealthCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#publicHealthCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=public_health
+%}

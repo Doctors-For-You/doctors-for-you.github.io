@@ -39,9 +39,9 @@
     <ion-icon class="text-primary" name="chevron-forward-sharp"></ion-icon>
   </a>
 
-  <div class="collapse navbar-collapse mx-md-3" id="navbarMenu">
+  <div class="collapse navbar-collapse mx-3" id="navbarMenu">
     <ul class="navbar-nav ml-auto">
-      {% for menu in site.data.nav.headerMenu %}
+      {% for menu in site.data.header_nav_menu %}
         {%- if menu.data -%}
           <li class="nav-item dropdown pl-1 pl-lg-2 pl-xl-3">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ menu.text }}</a>
@@ -58,12 +58,13 @@
               {% endfor %}
           </li>
         {%- else -%}
-          <li class="nav-item">
+          <li class="nav-item px-1">
             <a
-              class="nav-link" href="{{ menu.target }}"
+              class="nav-link d-flex flex-row align-items-center" href="{{ menu.target }}"
               data-event-label="{{ menu.text }}" data-event-category="header_nav"
             >
-              {{ menu.text }}
+              <ion-icon name="{{ menu.icon }}" class="text-muted mr-1"></ion-icon>
+              {{ menu.title }}
             </a>
           </li>
         {%- endif -%}
