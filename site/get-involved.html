@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+
+{% capture airtable_form %}
+<div class="row">
+  <div class="col-12 col-md-8 mx-auto text-center mb-4">
+    <h2 class="mb-3">Volunteer with DFY</h2>
+
+    <div class="text-justify mb-4">
+      Volunteers have always been a strength to the emergency response of any organization. Doctors For You is always on a constant hunt for such young minds who wants to contribute back to the community. There are multiple ways to volunteer with us.
+    </div>
+
+    <div class="row text-left">
+      <div class="col-12 col-sm-6 mb-4">
+        <h6>Field Volunteer</h6>
+        <div class="text-justify small">
+          DFY welcomes young minds from various backgrounds like doctors, paramedic, health workers, counselors, engineers, WASH specialists, disaster management specialists, administrative management, logistics etc. The field volunteers are expected to participate in various on-ground activities to provide medical relief to the individuals affected with the disaster.
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 mb-4">
+        <h6>DFY Promoter</h6>
+        <div class="small">
+          <div class="text-justify">
+            As a disaster response team, we constantly look of material support for our humanitarian activities. For this, we need individuals who can promote our mission among the locals and raise materials necessary for our humanitarian cause. Here are the major requirements:
+          </div>
+          <ol class="text-color-dark list-inline">
+            <li class="list-inline-item">Medicines</li>
+            <li class="list-inline-item">Medical equipment</li>
+            <li class="list-inline-item">Linen</li>
+            <li class="list-inline-item">Sanitary items</li>
+            <li class="list-inline-item">Financial support</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+      <iframe class="airtable-embed airtable-dynamic-height rounded shadow-sm" src="https://airtable.com/embed/shrdJzipA356IvFvA?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="927" style="background: transparent;"></iframe>
+    </div>
+
+  </div>
+</div>
+
+{% endcapture %}
+
+
+{% include section.html
+  bg_class="bg-light"
+  content=airtable_form
+%}

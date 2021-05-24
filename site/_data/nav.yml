@@ -4,7 +4,7 @@ headerMenu: [
     target: "/covid",
   },
   {
-    text: "What we do",
+    text: "What We Do",
     data: [
       { text: 'Public Health', icon: 'accessibility', target: '/about-us' },
       { text: 'Emergency Relief & Response', icon: 'medkit', target: '/about-us' },
@@ -42,14 +42,18 @@ headerMenu: [
   #   ],
   # },
   {
-    text: "Get involved",
-    data: [
-      { text: 'Volunteer With Us', icon: 'play', target: '/about-us' },
-      { text: 'Join Our Campaign', icon: 'bag-add', target: '/about-us' },
-      { text: 'Memberships', icon: 'receipt', target: '/about-us' },
-      { text: 'Careers', icon: 'bag-handle', target: '/about-us' },
-    ],
+    text: "Get Involved",
+    target: "/get-involved",
   },
+  # {
+  #   text: "Get involved",
+  #   data: [
+  #     { text: 'Volunteer With Us', icon: 'play', target: '/about-us' },
+  #     { text: 'Join Our Campaign', icon: 'bag-add', target: '/about-us' },
+  #     { text: 'Memberships', icon: 'receipt', target: '/about-us' },
+  #     { text: 'Careers', icon: 'bag-handle', target: '/about-us' },
+  #   ],
+  # },
 ]
 
 # data: [
