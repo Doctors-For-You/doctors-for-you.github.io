@@ -12,42 +12,6 @@ inlinejs: [
   </div>
 </div>
 
-<div class="row">
-  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 px-3 mb-0">
-    <ul id="partnerTab" class="nav nav-tabs justify-content-center" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link active d-flex flex-row align-items-center" data-filter="all" href="#">
-          <ion-icon name="apps" class="text-muted my-0 mr-2 lead"></ion-icon>
-          <div>Show all</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link d-flex flex-row align-items-center" data-filter="corporate" href="#">
-          <ion-icon name="home" class="text-muted my-0 mr-2 lead"></ion-icon>
-          <div>Corporates</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link d-flex flex-row align-items-center" data-filter="govt_body" href="#">
-          <ion-icon name="home" class="text-muted my-0 mr-2 lead"></ion-icon>
-          <div>Govt. Bodies</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link d-flex flex-row align-items-center" data-filter="organization" href="#">
-          <ion-icon name="home" class="text-muted my-0 mr-2 lead"></ion-icon>
-          <div>Organizations</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link d-flex flex-row align-items-center" data-filter="institution" href="#">
-          <ion-icon name="home" class="text-muted my-0 mr-2 lead"></ion-icon>
-          <div>Institutions</div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
 {% endcapture %}
 
 {% include section.html
@@ -57,6 +21,28 @@ inlinejs: [
 %}
 
 {% capture partner_section %}
+<div class="row mb-5">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 px-3 mb-0">
+    <ul id="partnerTab" class="nav nav-pills nav-pills-sm justify-content-center" role="tablist">
+      <li class="nav-item mb-3" role="presentation">
+        <a class="nav-link active" data-filter="all" href="#">Show all</a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link" data-filter="corporate" href="#"> Corporates </a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link" data-filter="govt_body" href="#">Govt. Bodies</a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link" data-filter="organization" href="#">Organizations</a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link" data-filter="institution" href="#">Institutions</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="row justify-content-center">
   {% for partner in site.data.partners %}
   <div class="logo_content col-4 col-sm-3 col-md-3 col-xl-2 px-3 mb-5" data-filter="{{ partner.type }}">

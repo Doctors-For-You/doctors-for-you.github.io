@@ -11,5 +11,13 @@ $(function() {
         $(obj).addClass('d-none').removeClass('d-block');
       }
     });
+    $('#partnerTab .nav-link').each(function(i, obj) {
+      var my_filter = $(obj).attr('data-filter');
+      if (current_filter === my_filter) {
+        $(obj).addClass('active');
+      } else {
+        $(obj).removeClass('active');
+      }
+    });
   });
 });

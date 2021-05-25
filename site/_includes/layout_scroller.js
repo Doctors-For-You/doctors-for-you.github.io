@@ -60,7 +60,7 @@ function scrollHandler() {
       });
     }
     else {
-      // console.log('safe zone');
+      // safe zone
     }
   }
 
@@ -73,7 +73,6 @@ function scrollHandlerWrapper() {
 }
 
 $(function() {
-  console.log('hello');
   $("#scroll_content").on('scroll', function(ev) {
     if (feature_raf_request) {
       window.cancelAnimationFrame(feature_raf_request);

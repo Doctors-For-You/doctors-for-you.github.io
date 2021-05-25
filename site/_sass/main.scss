@@ -114,8 +114,18 @@
 #layout_header {
   z-index: 1;
 }
+
 .navbar-nav {
   .nav-link {
     font-size: 600 !important;
+  }
+}
+
+.nav-pills-sm {
+  .nav-item {
+    .nav-link {
+      @extend .py-1;
+      @extend .small;
+    }
   }
 }
