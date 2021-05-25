@@ -1,0 +1,17 @@
+- name: All India Institute of Medical Sciences (AIIMS), Delhi
+  image: "aiims.png"
+
+- name: Maulana Azad Medical College (MAMC), Delhi
+  image: "maulana-azad.png"
+
+- name: Quarantine Centre, TISS, Mumbai
+  image: "tiss.png"
+
+- name: KEM Hospital, Mumbai
+  image: "kem.png"
+
+- name: Rajiv Gandhi Super Speciality Hospital, Delhi
+  image: "rajiv-gandhi.png"
+
+- name: Sharadaben Municipality Hospital, Ahmedabad
+  image: "sharadaben.png"
