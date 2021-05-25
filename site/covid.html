@@ -35,7 +35,7 @@ layout: default
   content=donate_filter
 %}
 
-{% capture covid_centers_tab %}
+{% capture covid_centers_tab_old %}
 {% for center in site.data.covid_centers %}
 <div class="bg-white rounded shadow-sm p-3 mb-3 d-flex flex-column flex-md-row justify-content-between">
   <div class="flex-shrink-1 d-flex flex-column align-items-start">
@@ -57,7 +57,7 @@ layout: default
 {% endfor %}
 {% endcapture %}
 
-{% capture vaccination_centers_tab %}
+{% capture vaccination_centers_tab_old %}
 {% for center in site.data.vaccination_centers %}
 <div class="bg-white rounded shadow-sm p-3 mb-3 d-flex flex-column flex-md-row justify-content-between">
   <div class="flex-shrink-1 d-flex flex-column align-items-start">
@@ -79,20 +79,75 @@ layout: default
 {% endfor %}
 {% endcapture %}
 
+{% capture covid_centers_tab %}
+<ul class="list-group list-group-flush">
+
+  {% for center in site.data.covid_centers %}
+  <li class="list-group-item">
+    <div class="bg-white rounded d-flex flex-column flex-md-row justify-content-between">
+      <div class="flex-shrink-1 d-flex flex-column align-items-start">
+        <div class="text-color-dark">{{ center.Name_of_the_Center }}</div>
+        <div class="d-flex flex-row align-items-center">
+          <ion-icon name="person" class="text-muted m-0 mr-1"></ion-icon>
+          <div class="text-color-dark small">{{ center.Contact }}</div>
+          <ion-icon name="call" class="text-muted ml-3 mr-1"></ion-icon>
+          <div class="text-color-dark small">{{ center.Number }}</div>
+        </div>
+      </div>
+      <div class="flex-shrink-1 d-flex flex-column align-items-start align-items-md-end text-md-right mt-3 mt-md-0">
+        <div class="text-muted small" style="line-height: 1.2;">
+          {{ center.Address | split: ", " | join: "<br />" }}
+        </div>
+        <div class="small">{{ center.City }}, {{ center.State }}</div>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endcapture %}
+
+{% capture vaccination_centers_tab %}
+<ul class="list-group list-group-flush">
+  {% for center in site.data.vaccination_centers %}
+    <li class="list-group-item">
+      <div class="bg-white rounded d-flex flex-column flex-md-row justify-content-between">
+        <div class="flex-shrink-1 d-flex flex-column align-items-start">
+          <div class="text-color-dark">{{ center.Name }}</div>
+          <div class="d-flex flex-row align-items-center">
+            <ion-icon name="person" class="text-muted m-0 mr-1"></ion-icon>
+            <div class="text-color-dark small">{{ center.Doctors_Center_incharge }}</div>
+            <ion-icon name="call" class="text-muted ml-3 mr-1"></ion-icon>
+            <div class="text-color-dark small">{{ center.Contact_Number }}</div>
+          </div>
+        </div>
+        <div class="flex-shrink-1 d-flex flex-column align-items-start align-items-md-end text-md-right mt-3 mt-md-0">
+          <div class="text-muted small" style="line-height: 1.2;">
+            {{ center.Address | split: ", " | join: "<br />" }}
+          </div>
+          <div class="small">{{ center.City }}, {{ center.State }}</div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+{% endcapture %}
+
 {% capture donate_tabpanes %}
-<div class="row">
-  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 p-0 mb-4">
-    <div class="tab-content overflow-auto p-3" style="max-height: 400px;">
-      <div class="tab-pane active" id="vaccination_centers" role="tabpanel" aria-labelledby="vaccination_centers_tab">{{ vaccination_centers_tab }}</div>
-      <div class="tab-pane" id="covid_centers" role="tabpanel" aria-labelledby="covid_centers_tab">{{ covid_centers_tab }}</div>
+<div class="row bg-light">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 p-0 mb-3">
+    <div class="px-3 pt-0 pb-3">
+      <div class="tab-content overflow-auto bg-white border-right border-left border-bottom" style="max-height: 400px;">
+        <div class="tab-pane active" id="vaccination_centers" role="tabpanel" aria-labelledby="vaccination_centers_tab">{{ vaccination_centers_tab }}</div>
+        <div class="tab-pane" id="covid_centers" role="tabpanel" aria-labelledby="covid_centers_tab">{{ covid_centers_tab }}</div>
+      </div>
     </div>
   </div>
 </div>
 {% endcapture %}
 
 {% include section.html
-  bg_class="bg-white"
-  py_class="pt-4 pb-5"
+  bg_class="bg-light"
+  py_class="pt-0 pb-4"
   content=donate_tabpanes
 %}
 
