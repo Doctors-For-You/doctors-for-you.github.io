@@ -96,10 +96,32 @@ layout: default
   content=donate_tabpanes
 %}
 
+{% include donate_ribbon.html %}
+
 {% capture partners %}
 <div class="row">
-  <div class="col-12 mb-4 text-center">
-    <h2>Our Partners</h2>
+  <div class="col-12 col-md-6 col-lg-7 mb-4 text-center text-md-left">
+    <h2 class=mb-3>Our Partners</h2>
+    <a href="/partners" role="button" class="btn btn-outline-primary d-inline-flex flex-row align-items-center">
+      <div class="d-inline-block">View all</div>
+      <ion-icon name="arrow-forward-outline" class="my-0 ml-3"></ion-icon>
+    </a>
+  </div>
+  <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-5 mb-4">
+
+    <div id="partnerRibbonCarousel" class="carousel slide p-3 rounded bg-white shadow-sm" data-ride="carousel">
+      <div class="carousel-inner">
+        {% for partner in site.data.partners %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="mx-auto" style="max-width: 150px;">
+            <img src="/assets/media/partners/{{ partner.logo_image }}" class="img-fluid" alt="{{ partner.name }}">
+          </div>
+          <div class="text-color-dark small text-center mt-3">{{ partner.name }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
   </div>
 </div>
 {% endcapture %}

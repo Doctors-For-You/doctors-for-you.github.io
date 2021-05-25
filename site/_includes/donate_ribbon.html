@@ -1,0 +1,26 @@
+
+{% capture donate %}
+<div class="row">
+  <div class="col-12 d-flex flex-row align-items-center">
+    <div class="flex-grow-1 flex-shrink-1">
+      <h2 class="text-white">Donate Today</h2>
+      <div class="text-white-50">
+        Your contribution in our war against COVID could ensure a new breath of life for someone!
+      </div>
+    </div>
+    <div class="flex-grow-0 flex-shrink-1">
+      <a
+        href="/donate" role="button"
+        class="btn btn-primary btn-lg" aria-label="Donate"
+      >
+        Donate
+      </a>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-dark"
+  content=donate
+%}
