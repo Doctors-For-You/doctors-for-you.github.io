@@ -110,3 +110,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#layout_header {
+  z-index: 1;
+}
+.navbar-nav {
+  .nav-link {
+    font-size: 600 !important;
+  }
+}

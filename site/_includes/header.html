@@ -60,10 +60,12 @@
         {%- else -%}
           <li class="nav-item px-1">
             <a
-              class="nav-link d-flex flex-row align-items-center" href="{{ menu.target }}"
+              class="nav-link" href="{{ menu.target }}"
               data-event-label="{{ menu.text }}" data-event-category="header_nav"
             >
-              <ion-icon name="{{ menu.icon }}" class="text-muted mr-1"></ion-icon>
+              {% comment %}
+                <ion-icon name="{{ menu.icon }}" class="text-muted mr-1"></ion-icon>
+              {% endcomment %}
               {{ menu.title }}
             </a>
           </li>
@@ -76,7 +78,7 @@
 
   <a
     href="/donate" role="button"
-    class="btn btn-primary btn d-none d-md-block" aria-label="Sign up"
+    class="btn btn-primary btn-sm d-none d-md-block" aria-label="Sign up"
     data-event-category="header_nav"
     data-event-label="Donate"
   >

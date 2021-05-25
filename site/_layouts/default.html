@@ -11,7 +11,7 @@
         {%- include header.html -%}
       </header>
 
-      <div class="d-flex flex-column flex-grow-1 flex-shrink-1 overflow-auto">
+      <div id="scroll_content" class="d-flex flex-column flex-grow-1 flex-shrink-1 overflow-auto">
         <main id="layout_content" class="flex-grow-1 flex-shrink-1 d-flex flex-column align-items-stretch" aria-label="Content">
           {{ content }}
         </main>
@@ -37,6 +37,11 @@
         {%- include {{ inlinejs }} -%}
       </script>
     {% endfor %}
+
+    <script type="text/javascript">
+    {% include layout_scroller.js %}
+    </script>
+
 
   </body>
 

@@ -64,6 +64,7 @@ $colors: map-merge(
   $colors
 );
 
+// F3F8FE
 $primary:       $blue;// !default;
 $primary-light: #B1CEFF;
 $primary-mute:  #E5F1FF;
@@ -72,7 +73,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #F3F8FE;// $gray-100 !default;
 $dark:          #12141D;//$gray-800 !default;
 $dark-alt:      #1D2029;
 
@@ -175,7 +176,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $light; //$white !default;
 $body-color:                #8A94A6;// $gray-900 !default;
 
 
