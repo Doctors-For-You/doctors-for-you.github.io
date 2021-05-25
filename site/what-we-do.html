@@ -18,7 +18,7 @@ layout: default
           <div class="carousel-item {% if forloop.first %}active{% endif %}">
             <img src="/assets/media/{{ project.image }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
             <div class="text-center">
-              <a class="text-decoration-none text-white" href="{{ project.target }}">{{ project.name }}</a>
+              <a class="text-decoration-none text-white" href="#">{{ project.name }}</a>
             </div>
           </div>
           {% endfor %}
@@ -63,7 +63,51 @@ layout: default
 
 
 {% capture disaster-management %}
-4. Disaster management ( emergency response, relief and rehabilitation)
+<div class="row mb-3">
+  <div class="col-12 col-md-8 mx-auto">
+    <h2 class="mb-2 text-center">Disaster management</h2>
+    <div class="mb-3 lead text-muted text-center">
+      Emergency response, relief &amp; rehabilitation
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-5 text-center order-1 order-md-2">
+    <div class="small text-justify mb-2">
+      Doctors For You (DFY) is committed to respond rapidly and efficiently for the humanitarian need of people affected by natural disaster or conflict. The goal of the organization is to help people access to essential health care. Its objective is to contribute to a reduction in mortality, morbidity, and disability which result from absence or inadequate access to health care.
+    </div>
+    <div class="small text-justify mb-2">
+      During disaster or acute emergencies, when access to medical facilities and health care services are at risk or disrupted, DFY ensure continuation of essential health services to displaced or affected populations in camp and other settings by providing preventive and curative health services. DFY is also committed to ensuring women health right by providing sexual and reproductive health care and protection from sexual violence and abuse through implementation of Minimum Initial Service Package in any response activities undertaken.
+    </div>
+    <div class="small text-justify mb-2">
+      DFY is now helping more people than ever, with more professional humanitarian aid workers in a manner that treat and uphold the rights and dignity of people it helps.
+    </div>
+  </div>
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-7 order-2 order-md-1">
+    <div class="bg-dark rounded p-2">
+      <div id="disasterMgmtCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          {% for project in site.data.disaster_management_projects %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <img src="/assets/media/{{ project.image }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
+            <div class="text-center">
+              <a class="text-decoration-none text-white" href="{{ project.target }}">{{ project.name }}</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#disasterMgmtCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#disasterMgmtCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endcapture %}
 
 {% include section.html
