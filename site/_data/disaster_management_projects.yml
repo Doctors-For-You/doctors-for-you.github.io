@@ -1,10 +1,10 @@
 - name: COVID-19 Response 2020
-  image: /public-health/NCD-Project.jpg
-  target: /project/ncd-project
+  image: /emergency/covid-response-cover.jpg
+  target: /project/covid-response
 
 - name: Acute Encephalitis Syndrome Response 2019
-  image: /public-health/TB-Program.jpg
-  target: /project/tb-project
+  image: /emergency/aesr-cover.jpg
+  target: /project/acute-encephalitis-syndrome-response
 
 - name: COVID-19 Awareness Program - Bihar
   image: /public-health/Slum-Health-Centre-Program.jpg
