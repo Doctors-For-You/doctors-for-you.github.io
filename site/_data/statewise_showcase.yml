@@ -1,0 +1,89 @@
+- location: Gurugram, Haryana
+  slug: gurugram
+  bullets:
+    - text: 200 bedded M3M Urbana
+    - text: 100 Bedded SECTOR-14
+    - text: 100 bedded Tau Devi Lal Sports Complex
+  images:
+    - src: gurugram/gurugram-1.jpg
+    - src: gurugram/gurugram-2.jpg
+    - src: gurugram/gurugram-3.jpg
+    - src: gurugram/gurugram-4.jpg
+    - src: gurugram/gurugram-5.jpg
+
+
+- location: Karnataka
+  slug: karnataka
+  bullets:
+    - text: 5 Tertiary Care Centre COVID Hospital in Bangalore with 98 ICU and 208 HDU
+    - text: 4 rural model COVID Care Dedicated Hospital (CCDH)
+    - text: PPE material support
+    - text: Training and capacity building of healthcare professionals
+  images:
+    - src: karnataka/karnataka-1.jpg
+    - src: karnataka/karnataka-2.jpg
+    - src: karnataka/karnataka-3.jpg
+    - src: karnataka/karnataka-4.jpg
+    - src: karnataka/karnataka-5.jpg
+    - src: karnataka/karnataka-6.jpg
+
+- location: Delhi
+  slug: delhi
+  bullets:
+    - text: 120 bedded Shehnai Banquet Hall, LNJP Hospital extension centre
+    - text: 120 Bedded Rouse Avenue Boys School
+    - text: 600 bedded Commonwealth Games Village
+    - text: 800 bedded Yamuna Sports Statium
+    - text: Ambulance, television sets, computers and laptops, child friendly isolation wards etc.
+  images:
+    - src: delhi/delhi-1.jpg
+    - src: delhi/delhi-2.jpg
+    - src: delhi/delhi-3.jpg
+    - src: delhi/delhi-4.jpg
+    - src: delhi/delhi-5.jpg
+    - src: delhi/delhi-6.jpg
+
+- location: Bihar
+  slug: bihar
+  bullets:
+    - text: Screening and testing of suspected cases
+    - text: Dedicated 50 bedded isolation and treatment hospital set up for Covid-19
+    - text: 100 Bedded Patliputra Sports Complex setup and managed
+  images:
+    - src: bihar/bihar-1.jpg
+    - src: bihar/bihar-2.jpg
+    - src: bihar/bihar-3.jpg
+    - src: bihar/bihar-4.jpg
+    - src: bihar/bihar-5.jpg
+
+- location: Mumbai
+  bullets:
+    - text: PPE material support to critical healthcare facilities
+    - text: Equipment support to isolation hospital of M/E & H/E ward
+    - text: Screening and contact tracing
+    - text: Ration support
+    - text: Community awareness activity
+    - text: MMU activity/OPD
+    - text: Training of healthcare professionals
+  images:
+    - src: mumbai/mumbai-1.jpg
+    - src: mumbai/mumbai-2.jpg
+    - src: mumbai/mumbai-3.jpg
+    - src: mumbai/mumbai-4.jpg
+    - src: mumbai/mumbai-5.jpg
+    - src: mumbai/mumbai-6.jpg
+
+- location: Andhra Pradesh
+  slug: andhra
+  bullets:
+    - text: Setting and managing two 50 bed Isolation centers at Vijaywada and Krishna District
+    - text: Equipment and material support for selected hospital
+    - text: PPE material support
+    - text: Training and capacity building of healthcare professionals
+  images:
+    - src: andhra-pradesh/andhra-pradesh-1.jpg
+    - src: andhra-pradesh/andhra-pradesh-2.jpg
+    - src: andhra-pradesh/andhra-pradesh-3.jpg
+    - src: andhra-pradesh/andhra-pradesh-4.jpg
+    - src: andhra-pradesh/andhra-pradesh-5.jpg
+    - src: andhra-pradesh/andhra-pradesh-6.jpg

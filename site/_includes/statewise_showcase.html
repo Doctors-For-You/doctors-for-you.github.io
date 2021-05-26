@@ -1,0 +1,72 @@
+
+{% capture gurugram_haryana %}
+<div class="row">
+  <div class="col-12 col-md-5">
+
+  </div>
+  <div class="col-12 col-md-7">
+
+  </div>
+</div>
+{% endcapture %}
+
+{% capture statewise_carousel %}
+<div class="row mb-4">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 px-3 mb-0">
+    <ul id="statewiseTab" class="nav nav-pills nav-pills-sm justify-content-center" role="tablist">
+      {% for showcase in site.data.statewise_showcase %}
+      <li class="nav-item mb-3" role="presentation">
+        <a class="nav-link {% if forloop.first %}active{% endif %}" data-filter="all" href="#">{{ showcase.location }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+
+    <div id="showcaseCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        {% for showcase in site.data.statewise_showcase %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <ul class="list-group list-group-flush">
+              {% for bullet in showcase.bullets %}
+                <li class="list-group-item">{{ bullet.text }}</li>
+              {% endfor %}
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row align-items-center">
+                {% for item in showcase.images %}
+                <div class="col-4 text-center">
+                  <img src="/assets/media/statewise-showcase/{{ item.src }}" class="img-fluid my-1" />
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <!-- <a class="carousel-control-prev" href="#showcaseCarousel" role="button" data-slide="prev">
+        <ion-icon name="caret-back-circle" class="text-muted"></ion-icon>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#showcaseCarousel" role="button" data-slide="next">
+        <ion-icon name="caret-forward-circle" class="text-muted"></ion-icon>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+
+
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=statewise_carousel
+%}
