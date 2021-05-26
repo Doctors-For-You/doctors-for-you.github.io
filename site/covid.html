@@ -84,7 +84,7 @@ inlinejs: [
 {% endfor %}
 {% endcapture %}
 
-{% capture covid_centers_tab %}
+{% capture covid_centers_tab_old2 %}
 <ul class="list-group list-group-flush">
 
   {% for center in site.data.covid_centers %}
@@ -111,7 +111,9 @@ inlinejs: [
 </ul>
 {% endcapture %}
 
-{% capture vaccination_centers_tab %}
+
+
+{% capture vaccination_centers_tab_old %}
 <ul class="list-group list-group-flush">
   {% for center in site.data.vaccination_centers %}
     <li class="list-group-item">
@@ -137,11 +139,28 @@ inlinejs: [
 </ul>
 {% endcapture %}
 
-{% capture donate_tabpanes %}
+
+{% capture vaccination_centers_tab %}
+<iframe class="airtable-embed"
+  src="https://airtable.com/embed/shrxoAueIiuQbkeLP?backgroundColor=purple&viewControls=on"
+  frameborder="0" onmousewheel="" width="100%" height="533"
+  style="background: transparent; border: none">
+</iframe>
+{% endcapture %}
+
+{% capture covid_centers_tab %}
+<iframe class="airtable-embed"
+  src="https://airtable.com/embed/shruZlMYTuxgLwElD?backgroundColor=purple&viewControls=on"
+  frameborder="0" onmousewheel="" width="100%" height="533"
+  style="background: transparent; border: none">
+</iframe>
+{% endcapture %}
+
+{% capture center_finder %}
 <div class="row bg-light">
   <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 p-0 mb-3">
     <div class="px-3 pt-0 pb-3">
-      <div class="tab-content overflow-auto bg-white border-right border-left border-bottom" style="max-height: 400px;">
+      <div class="tab-content overflow-auto bg-white border-right border-left border-bottom" style="max-height: 533px;">
         <div class="tab-pane active" id="vaccination_centers" role="tabpanel" aria-labelledby="vaccination_centers_tab">{{ vaccination_centers_tab }}</div>
         <div class="tab-pane" id="covid_centers" role="tabpanel" aria-labelledby="covid_centers_tab">{{ covid_centers_tab }}</div>
       </div>
@@ -153,7 +172,7 @@ inlinejs: [
 {% include section.html
   bg_class="bg-light"
   py_class="pt-0 pb-4"
-  content=donate_tabpanes
+  content=center_finder
 %}
 
 {% capture protect_the_protector_section %}
