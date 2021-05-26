@@ -1,14 +1,4 @@
 
-{% capture gurugram_haryana %}
-<div class="row">
-  <div class="col-12 col-md-5">
-
-  </div>
-  <div class="col-12 col-md-7">
-
-  </div>
-</div>
-{% endcapture %}
 
 {% capture statewise_carousel %}
 <div class="row mb-4">
@@ -16,7 +6,7 @@
     <ul id="statewiseTab" class="nav nav-pills nav-pills-sm justify-content-center" role="tablist">
       {% for showcase in site.data.statewise_showcase %}
       <li class="nav-item mb-3" role="presentation">
-        <a class="nav-link {% if forloop.first %}active{% endif %}" data-filter="all" href="#">{{ showcase.location }}</a>
+        <a class="nav-link {% if forloop.first %}active{% endif %}" data-filter="all" data-index="{{ forloop.index }}" href="#">{{ showcase.location }}</a>
       </li>
       {% endfor %}
     </ul>
