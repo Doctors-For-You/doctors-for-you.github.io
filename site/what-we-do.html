@@ -104,15 +104,13 @@ layout: default
 <div class="row mb-3">
   <div class="col-12 col-md-8 mx-auto">
     <h2 class="text-center">Skill Development & Livelihood</h2>
-
-
   </div>
 </div>
 
 <div class="row">
   {% for project in section.projects %}
     {% assign project_page = site.pages | where: "path", project.path | first %}
-    <div class="col-12 col-sm-4 px-2">
+    <div class="col-12 col-sm-4 px-2 mb-3">
       <div class="rounded shadow-on-hover-grow bg-white overflow-hidden">
         <img src="/assets/media/{{ project_page.cover }}" class="img-fluid mb-2">
         <div class="text-center pt-2 pb-3">
@@ -122,7 +120,6 @@ layout: default
     </div>
   {% endfor %}
 </div>
-
 {% endcapture %}
 
 {% include section.html
@@ -131,42 +128,98 @@ layout: default
 %}
 
 
+{% capture water-sanitation %}
+{% assign section = site.data.what_we_do.water_sanitation_and_hygiene %}
+<div class="row mb-3">
+  <div class="col-12 col-md-8 mx-auto">
+    <h2 class="text-center text-white">Water Sanitation & Hygiene</h2>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-{% capture healthcare-strengthening %}
-  2. Health care system strengthening ( Infrastructure support, Capacity Building and evidence based policy)
+<div class="row">
+  {% for project in section.projects %}
+    {% assign project_page = site.pages | where: "path", project.path | first %}
+    <div class="col-12 col-sm-6 col-md-3 px-2 mb-3">
+      <div class="rounded bg-dark-alt overflow-hidden">
+        <img src="/assets/media/{{ project_page.cover }}" class="img-fluid mb-2">
+        <div class="text-center pt-2 pb-3">
+          <a class="text-decoration-none text-white-75 small" href="{{ project_page.path | remove: '.md' }}">{{ project_page.title }}</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 {% endcapture %}
 
+{% include section.html
+  bg_class="bg-dark"
+  content=water-sanitation
+%}
+
+
+{% capture public_health %}
+{% assign section = site.data.what_we_do.environment_and_sustainability %}
+<div class="row align-items-center">
+  <div class="col-12 col-md-5 text-center">
+    <h2 class="mb-4 text-center text-md-left">Environment & Sustainability</h2>
+    <div class="mb-4 text-justify">
+      DFY is involved in building rapid emergency medical response team for the acute early emergency phase of disasters and complex emergencies. The development of the Emergency Response Unit aims at achieving faster and better quality deployment through good planning and preparedness.
+    </div>
+  </div>
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-7 offset-md-0">
+    <ul class="list-group list-group-flush">
+      {% for project in section.projects %}
+        {% assign project_page = site.pages | where: "path", project.path | first %}
+        <li class="list-group-item project-list-item px-0 py-0 bg-transparent">
+          <a href="{{ project_page.path | remove: '.md' }}" class="text-decoration-none">
+            <div class="d-flex flex-row align-items-center py-3 justify-content-between" style="min-height: 48px;">
+              <div class="mr-3 flex-grow-0 flex-shrink-0" style="width: 80px;">
+                <img src="/assets/media/{{ project_page.cover }}" class="img-fluid rounded-sm overflow-hidden">
+              </div>
+              <div class="flex-grow-1 flex-shrink-1">
+                {{ project_page.title }}
+              </div>
+              <div class="ml-3 flex-grow-0 flex-shrink-0">
+                <ion-icon name="chevron-forward-sharp"></ion-icon>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=public_health
+%}
+
+
+{% capture training_capacity %}
+{% assign section = site.data.what_we_do.training_capacity_building_and_research %}
+<div class="row">
+  <div class="col-12 col-sm-10 mx-auto mb-3">
+    <h2>Training Capacity Building & Research</h2>
+  </div>
+  <div class="clearfix"></div>
+
+  {% for project in section.projects %}
+    {% assign project_page = site.pages | where: "path", project.path | first %}
+    <div class="col-12 col-sm-6 mb-3">
+      <div class="shadow-on-hover-grow rounded text-center">
+        <a href="{{ project_page.path | remove: '.md' }}" class="text-decoration-none">
+          <h4 class="py-4">{{ project_page.title }}</h4>
+        </a>
+      </div>
+    </div>
+
+  {% endfor %}
+
+</div>
+{% endcapture %}
 {% include section.html
   bg_class="bg-white"
-  content=healthcare-strengthening
-%}
-
-{% capture healthcare-devices %}
-3. Primary Health care devices ( Prevention and management of Communicable and Non communicable diseases)
-{% endcapture %}
-
-{% include section.html
-  bg_class="bg-light"
-  content=healthcare-devices
-%}
-
-
-
-{% capture community-development %}
-5. Community development initiative
-{% endcapture %}
-
-{% include section.html
-  bg_class="bg-light"
-  content=community-development
+  content=training_capacity
 %}
