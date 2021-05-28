@@ -1,0 +1,8 @@
+name: Water Sanitation & Hygiene
+slug: water_sanitation_and_hygiene
+order: 4
+projects:
+- path: projects/soap-for-hope.md
+- path: projects/sanitation-tamilnadu.md
+- path: projects/sanitation-jammu.md
+- path: projects/sanitation-assam.md
