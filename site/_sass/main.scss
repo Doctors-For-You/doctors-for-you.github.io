@@ -145,3 +145,12 @@
     }
   }
 }
+
+.project-list-item {
+  ._proj_thumb {
+    width: 80px;
+    @extend .rounded-sm;
+    @extend .overflow-hidden;
+  }
+
+}

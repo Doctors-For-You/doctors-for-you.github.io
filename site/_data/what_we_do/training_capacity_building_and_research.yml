@@ -1,0 +1,6 @@
+name: Training Capacity Building & Research
+slug: training_capacity_building_and_research
+order: 5
+projects:
+- path: projects/lancet-global-surgery.md
+- path: projects/research-publications.md
