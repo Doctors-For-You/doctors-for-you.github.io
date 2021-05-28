@@ -1,0 +1,30 @@
+name: Disaster Risk Reduction
+order: 2
+projects:
+- name: Project 1
+  image: /public-health/NCD-Project.jpg
+  target: /project/ncd-project
+#
+# - name: TB Project
+#   image: /public-health/TB-Program.jpg
+#   target: /project/tb-project
+#
+# - name: Slum Health Centers
+#   image: /public-health/Slum-Health-Centre-Program.jpg
+#   target: /project/slum-health-centers
+#
+# - name: DFY Health Center, Masari
+#   image: /public-health/nmbt-health-center-bihar.png
+#   target: /project/dfy-health-center-masari
+#
+# - name: Malnutrition Project
+#   image: /public-health/Malnutrition-Program.jpg
+#   target: /project/malnutrition-project
+#
+# - name: Shravan Health Center
+#   image: /public-health/shravan-health-centre-kalva.jpg
+#   target: /project/shravan-health-center
+#
+# - name: Project POSHAN
+#   image: /public-health/poshan-main.jpg
+#   target: /project/project-poshan

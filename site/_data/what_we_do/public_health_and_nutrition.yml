@@ -1,0 +1,35 @@
+name: Public Health & Nutrition
+slug: public_health_and_nutrition
+summary: DFY is involved in building rapid emergency medical response team for the acute early emergency phase of disasters and complex emergencies. The development of the Emergency Response Unit aims at achieving faster and better quality deployment through careful planning and preparedness.
+order: 1
+projects:
+- path: projects/ncd-project.md
+- path: projects/tb-project.md
+- path: projects/dfy-health-center-masari.md
+- path: projects/malnutrition-project.md
+- path: projects/shravan-health-center.md
+- path: projects/project-poshan.md
+
+# - name: TB Project
+#   image: /public-health/TB-Program.jpg
+#   target: /project/tb-project
+#
+# - name: Slum Health Centers
+#   image: /public-health/Slum-Health-Centre-Program.jpg
+#   target: /project/slum-health-centers
+#
+# - name: DFY Health Center, Masari
+#   image: /public-health/nmbt-health-center-bihar.png
+#   target: /project/dfy-health-center-masari
+#
+# - name: Malnutrition Project
+#   image: /public-health/Malnutrition-Program.jpg
+#   target: /project/malnutrition-project
+#
+# - name: Shravan Health Center
+#   image: /public-health/shravan-health-centre-kalva.jpg
+#   target: /project/shravan-health-center
+#
+# - name: Project POSHAN
+#   image: /public-health/poshan-main.jpg
+#   target: /project/project-poshan
