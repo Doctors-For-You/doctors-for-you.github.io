@@ -60,12 +60,9 @@
         {%- else -%}
           <li class="nav-item px-1">
             <a
-              class="nav-link" href="{{ menu.target }}"
+              class="nav-link text-center" href="{{ menu.target }}"
               data-event-label="{{ menu.text }}" data-event-category="header_nav"
             >
-              {% comment %}
-                <ion-icon name="{{ menu.icon }}" class="text-muted mr-1"></ion-icon>
-              {% endcomment %}
               {{ menu.title }}
             </a>
           </li>

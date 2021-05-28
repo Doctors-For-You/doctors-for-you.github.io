@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+
+{% capture allprojheading %}
+<div class="row">
+  <div class="col-12 mx-auto">
+    <h2 class="text-center">DFY Projects</h2>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-light"
+  content=allprojheading
+%}
+
+
+{% capture project_content %}
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 mx-auto">
+    <ul class="list-group list-group-flush">
+
+      {% for page in site.pages %}
+        {% assign dir = page.path | split: "/" | first %}
+        {% if dir == "projects" %}
+
+          <li class="list-group-item project-list-item px-0 py-0">
+            <a href="{{ page.path | remove: '.md' }}" class="text-decoration-none">
+              <div class="d-flex flex-row align-items-center py-2" style="min-height: 60px;">
+                <div class="_proj_thumb mr-3 flex-grow-0 flex-shrink-0" style="width: 80px;">
+                  <img src="/assets/media/{{ page.cover }}" class="img-fluid">
+                </div>
+                <div class="flex-grow-1 flex-shrink-1" style="line-height: 1.24;">
+                  {{ page.title }}
+                </div>
+                <div class="ml-3 flex-grow-0 flex-shrink-0">
+                  <ion-icon name="chevron-forward-sharp"></ion-icon>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+
+    </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-white"
+  content=project_content
+%}

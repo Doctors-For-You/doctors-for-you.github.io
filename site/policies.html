@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% capture policies_heading %}
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 mx-auto">
+    <h2 class="text-center mb-3">Policies & Guidelines</h2>
+    <div class="text-justify">
+      The functioning of DFY is guided by a set of ethical values and guidelines. Please read the below organisational policies to understand DFY work culture and personnel guidelines.
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-light"
+  content=policies_heading
+%}
+
+
+{% capture policies_content%}
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 mx-auto">
+    <ul class="list-group list-group-flush">
+      {% for policy in site.data.policies %}
+      <li class="list-group-item project-list-item px-0 py-0">
+        <a href="/assets/file{{ policy.filepath }}" class="text-decoration-none">
+          <div class="d-flex flex-row align-items-center py-2 justify-content-between" style="min-height: 48px;">
+            <div class="">
+              {{ policy.name }}
+            </div>
+            <div class="ml-3 flex-grow-0 flex-shrink-0">
+              <ion-icon name="chevron-forward-sharp"></ion-icon>
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-white"
+  content=policies_content
+%}

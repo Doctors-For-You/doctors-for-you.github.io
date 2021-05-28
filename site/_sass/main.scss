@@ -116,7 +116,13 @@
 
 .navbar-nav {
   .nav-link {
-    font-size: 600 !important;
+    font-weight: 600 !important;
+    // font-size: $font-size-sm;
+    line-height: 1.1;
+    // @include media-breakpoint-up(lg) {
+    //   font-size: $font-size-base;
+    //
+    // }
   }
 }
 
@@ -152,5 +158,8 @@
     @extend .rounded-sm;
     @extend .overflow-hidden;
   }
+}
 
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
