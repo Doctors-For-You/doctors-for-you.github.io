@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: reports/field-reports
+---
+
+{% capture fr_heading %}
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 mx-auto">
+    <h2 class="text-center">Field Reports</h2>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-light"
+  content=fr_heading
+%}
+
+
+{% capture fr_content %}
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 mx-auto">
+    <ul class="list-group list-group-flush">
+      {% for report in site.data.field_reports %}
+      <li class="list-group-item project-list-item px-0 py-0">
+        <a href="/assets/file{{ report.filepath }}" class="text-decoration-none">
+          <div class="d-flex flex-row align-items-center py-2 justify-content-between" style="min-height: 48px;">
+            <div class="">
+              {{ report.name }}
+            </div>
+            <div class="ml-3 flex-grow-0 flex-shrink-0">
+              <ion-icon name="chevron-forward-sharp"></ion-icon>
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-white"
+  content=fr_content
+%}

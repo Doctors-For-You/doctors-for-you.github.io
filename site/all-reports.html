@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{% capture ar_heading %}
+<div class="row">
+  <div class="col-12 col-sm-10 col-md-8 mx-auto">
+    <h2 class="text-center">Reports & Data</h2>
+  </div>
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-light"
+  content=ar_heading
+%}
+
+
+{% capture ar_content %}
+<div class="row align-items-center">
+  <div class="col-12 col-sm-6 mb-3">
+    <div class="shadow-on-hover-grow rounded text-center">
+      <a href="/reports/annual-reports" class="text-decoration-none">
+        <h4 class="py-4">Annual Reports</h4>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 mb-3">
+    <div class="shadow-on-hover-grow rounded">
+      <div class="shadow-on-hover-grow rounded text-center">
+        <a href="/reports/field-reports" class="text-decoration-none">
+          <h4 class="py-4">Field Reports</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endcapture %}
+{% include section.html
+  bg_class="bg-white"
+  content=ar_content
+%}
