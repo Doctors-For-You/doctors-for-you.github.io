@@ -1,7 +1,6 @@
 name: Disaster Risk Reduction
-slug: disaster-risk-reduction
+slug: disaster_risk_reduction
 summary: We are committed to respond rapidly and efficiently for the humanitarian need of people affected by natural disaster or conflict. Our goal is provide essential health care, reduce mortality, morbidity and disability resulting from absence or inadequate access to health care. During disaster or acute emergencies, when access to medical facilities and health care services are at risk or disrupted, DFY ensure continuation of essential health services to displaced or affected populations in camp and other settings by providing preventive and curative health services. DFY is also committed to ensuring women health right by providing sexual and reproductive health care and protection from sexual violence and abuse through implementation of Minimum Initial Service Package in any response activities undertaken. DFY is now helping more people than ever, with more professional humanitarian aid workers in a manner that treat and uphold the rights and dignity of people it helps.
-
 order: 2
 projects:
 - path: projects/covid19-response-2020.md

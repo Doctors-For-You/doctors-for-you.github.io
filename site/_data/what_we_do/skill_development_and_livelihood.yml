@@ -1,0 +1,7 @@
+name: Skill Development & Livelihood
+slug: skill_development_and_livelihood
+order: 1
+projects:
+- path: projects/garima.md
+- path: projects/nursing-assistant-training.md
+- path: projects/dental-assistant-training.md
