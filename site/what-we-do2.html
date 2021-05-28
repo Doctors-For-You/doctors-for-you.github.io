@@ -61,14 +61,13 @@ layout: default
       <div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           {% for project in section.projects %}
-          {% assign project_page = site.pages | where: "path", project.path | first %}
-
-          <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <img src="/assets/media/{{ project_page.cover }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
-            <div class="text-center">
-              <a class="text-decoration-none text-white" href="{{ project_page.path | remove: '.md' }}">{{ project_page.title }}</a>
+            {% assign project_page = site.pages | where: "path", project.path | first %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="/assets/media/{{ project_page.cover }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
+              <div class="text-center">
+                <a class="text-decoration-none text-white" href="{{ project_page.path | remove: '.md' }}">{{ project_page.title }}</a>
+              </div>
             </div>
-          </div>
           {% endfor %}
         </div>
         <a class="carousel-control-prev" href="#{{ carousel_id }}" role="button" data-slide="prev">
@@ -86,6 +85,6 @@ layout: default
 {% endcapture %}
 
 {% include section.html
-  bg_class="bg-light"
+  bg_class="bg-white"
   content=public_health
 %}

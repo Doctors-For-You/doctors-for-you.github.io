@@ -3,31 +3,34 @@ layout: default
 ---
 
 {% capture public_health %}
+{% assign section = site.data.what_we_do.public_health_and_nutrition %}
+{% assign carousel_id = "id_" | append: section.slug | append: "_carousel" %}
 <div class="row align-items-center">
   <div class="col-12 col-md-5 text-center">
-    <h2 class="mb-4 text-center text-md-left">Public Health</h2>
+    <h2 class="mb-4 text-center text-md-left">{{ section.name }}</h2>
     <div class="mb-4 text-justify">
-      DFY is involved in building rapid emergency medical response team for the acute early emergency phase of disasters and complex emergencies. The development of the Emergency Response Unit aims at achieving faster and better quality deployment through careful planning and preparedness.
+      {{ section.summary }}
     </div>
   </div>
   <div class="col-12 col-sm-10 offset-sm-1 col-md-7 offset-md-0">
     <div class="bg-dark rounded p-2">
-      <div id="publicHealthCarousel" class="carousel slide" data-ride="carousel">
+      <div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          {% for project in site.data.public_health_projects %}
-          <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <img src="/assets/media/{{ project.image }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
-            <div class="text-center">
-              <a class="text-decoration-none text-white" href="#">{{ project.name }}</a>
+          {% for project in section.projects %}
+            {% assign project_page = site.pages | where: "path", project.path | first %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="/assets/media/{{ project_page.cover }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
+              <div class="text-center">
+                <a class="text-decoration-none text-white" href="{{ project_page.path | remove: '.md' }}">{{ project_page.title }}</a>
+              </div>
             </div>
-          </div>
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#publicHealthCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#{{ carousel_id }}" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#publicHealthCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#{{ carousel_id }}" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -43,42 +46,18 @@ layout: default
 %}
 
 
-{% capture healthcare-strengthening %}
-  2. Health care system strengthening ( Infrastructure support, Capacity Building and evidence based policy)
-{% endcapture %}
-
-{% comment %}
-{% include section.html
-  bg_class="bg-white"
-  content=healthcare-strengthening
-%}
-{% endcomment %}
-
-{% capture healthcare-devices %}
-3. Primary Health care devices ( Prevention and management of Communicable and Non communicable diseases)
-{% endcapture %}
-
-{% comment %}
-{% include section.html
-  bg_class="bg-light"
-  content=healthcare-devices
-%}
-{% endcomment %}
-
-
-{% capture disaster-management %}
+{% capture disaster-risk-reduction %}
+{% assign section = site.data.what_we_do.disaster_risk_reduction %}
+{% assign carousel_id = "id_" | append: section.slug | append: "_carousel" %}
 <div class="row mb-3">
   <div class="col-12 col-md-8 mx-auto">
-    <h2 class="mb-2 text-center">Disaster management</h2>
-    <div class="mb-3 lead text-muted text-center">
-      Emergency response, relief &amp; rehabilitation
-    </div>
+    <h2 class="mb-3 text-center">Disaster Risk Reduction</h2>
   </div>
 </div>
 <div class="row">
   <div class="col-12 col-md-6 col-lg-5 text-center order-1 order-md-2">
     <div class="small text-justify mb-2">
-      Doctors For You (DFY) is committed to respond rapidly and efficiently for the humanitarian need of people affected by natural disaster or conflict. The goal of the organization is to help people access to essential health care. Its objective is to contribute to a reduction in mortality, morbidity, and disability which result from absence or inadequate access to health care.
+      We are committed to respond rapidly and efficiently for the humanitarian need of people affected by natural disaster or conflict. Our goal is provide essential health care, reduce mortality, morbidity and disability resulting from absence or inadequate access to health care.
     </div>
     <div class="small text-justify mb-2">
       During disaster or acute emergencies, when access to medical facilities and health care services are at risk or disrupted, DFY ensure continuation of essential health services to displaced or affected populations in camp and other settings by providing preventive and curative health services. DFY is also committed to ensuring women health right by providing sexual and reproductive health care and protection from sexual violence and abuse through implementation of Minimum Initial Service Package in any response activities undertaken.
@@ -89,22 +68,23 @@ layout: default
   </div>
   <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-7 order-2 order-md-1">
     <div class="bg-dark rounded p-2">
-      <div id="disasterMgmtCarousel" class="carousel slide" data-ride="carousel">
+      <div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          {% for project in site.data.disaster_management_projects %}
-          <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <img src="/assets/media/{{ project.image }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
-            <div class="text-center">
-              <a class="text-decoration-none text-white" href="{{ project.target }}">{{ project.name }}</a>
+          {% for project in section.projects %}
+            {% assign project_page = site.pages | where: "path", project.path | first %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="/assets/media/{{ project_page.cover }}" class="d-block w-100 mb-2" alt="{{ project.name }}">
+              <div class="text-center">
+                <a class="text-decoration-none text-white" href="{{ project_page.path | remove: '.md' }}">{{ project_page.title }}</a>
+              </div>
             </div>
-          </div>
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#disasterMgmtCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#{{ carousel_id }}" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#disasterMgmtCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#{{ carousel_id }}" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -116,16 +96,77 @@ layout: default
 
 {% include section.html
   bg_class="bg-white"
-  content=disaster-management
+  content=disaster-risk-reduction
 %}
+
+{% capture skill-dev %}
+{% assign section = site.data.what_we_do.skill_development_and_livelihood %}
+<div class="row mb-3">
+  <div class="col-12 col-md-8 mx-auto">
+    <h2 class="text-center">Skill Development & Livelihood</h2>
+
+
+  </div>
+</div>
+
+<div class="row">
+  {% for project in section.projects %}
+    {% assign project_page = site.pages | where: "path", project.path | first %}
+    <div class="col-12 col-sm-4 px-2">
+      <div class="rounded shadow-on-hover-grow bg-white overflow-hidden">
+        <img src="/assets/media/{{ project_page.cover }}" class="img-fluid mb-2">
+        <div class="text-center pt-2 pb-3">
+          <a class="text-decoration-none" href="{{ project_page.path | remove: '.md' }}">{{ project_page.title }}</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=skill-dev
+%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% capture healthcare-strengthening %}
+  2. Health care system strengthening ( Infrastructure support, Capacity Building and evidence based policy)
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-white"
+  content=healthcare-strengthening
+%}
+
+{% capture healthcare-devices %}
+3. Primary Health care devices ( Prevention and management of Communicable and Non communicable diseases)
+{% endcapture %}
+
+{% include section.html
+  bg_class="bg-light"
+  content=healthcare-devices
+%}
+
+
 
 {% capture community-development %}
 5. Community development initiative
 {% endcapture %}
 
-{% comment %}
 {% include section.html
   bg_class="bg-light"
   content=community-development
 %}
-{% endcomment %}
